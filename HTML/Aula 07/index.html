@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet and Love</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sweet and Love</h1>
+    </header>
+
+    <main>
+        <!-- Área com todo o conteúdo relacionado à experiência do usuário -->
+        <fieldset id="userExperience">
+
+            <h2>Experiência do Usuário</h2>
+
+            <form method="post" action="mailto:example@email.com">
+
+                <!-- Campos obrigatórios -->
+                <p><strong>Preencha os campos com os seus dados.</strong></p>
+
+                <label for="name">Nome: </label>
+                <input required type="text" id="name" size="30" placeholder="Nome">
+                <br><br>
+
+                <label for="age">Idade: </label>
+                <input required type="number" id="age" size="10" min="0" max="100" placeholder="0">
+                <br><br>
+
+                <label for="email">Email: </label>
+                <input required type="email" id="email" size="30" placeholder="Email">
+                <br><br>
+
+                <!-- Loja de atendimento -->
+                <p><strong>Em qual loja você foi atendido(a)?</strong></p>
+
+                <select name="local" id="local">
+                    <option value="aclimacao">Aclimação</option>
+                    <option value="liberdade">Liberdade</option>
+                    <option value="tatuape">Tatuapé</option>
+                    <option value="saoJoaquim">São Joaquim</option>
+                </select>
+                <br><br>
+
+                <!-- Indicar ou não a loja -->
+                <p><strong>Você indicaria nossa loja para um amigo(a)?</strong></p>
+
+                <input type="radio" name="indicar" id="sim" value="sim">
+                <label for="sim">Sim</label>
+                <br>
+
+                <input type="radio" name="indicar" id="nao" value="nao">
+                <label for="nao">Não</label>
+                <br><br>
+
+                <!-- Último pedido -->
+                <p><strong>Qual foi a sua última compra na nossa loja?</strong></p>
+
+                <label for="pedido">Pedido: </label>
+                <input type="text" id="pedido" size="20" placeholder="Ex: Bolo de Chocolate">
+                <br><br>
+
+                <!-- Escolher  o que preferiu -->
+                <p><strong>O que você mais gostou na nossa loja?</strong></p>
+
+                <input type="checkbox" value="doces" id="doces">
+                <label for="doces">Doces</label>
+                <br>
+
+                <input type="checkbox" value="ambiente" id="ambiente">
+                <label for="ambiente">Ambiente</label>
+                <br>
+
+                <input type="checkbox" value="entrega" id="entrega">
+                <label for="entrega">Entrega</label>
+                <br>
+
+                <input type="checkbox" value="atendimento" id="atendimento">
+                <label for="atendimento">Atendimento</label>
+                <br>
+
+                <input type="checkbox" value="valores" id="valores">
+                <label for="valores">Valores</label>
+                <br><br>
+
+                <!-- Vontade de voltar ao restaurante -->
+                <p><strong>Qual sua vontade de voltar ao restaurante?</strong></p>
+                <label for="nota">Muito Baixa!</label>
+                <input id="nota" type="range" min="0" max="10">
+                <label for="nota">Muito Alta!</label>
+                <br><br>
+
+                <!-- Feedback final -->
+                <p><strong>Na sua opinião, o que podemos melhorar?</strong></p>
+                <textarea name="feedback" id="feedback" cols="40" rows="10" placeholder="Digite aqui!"></textarea>
+
+                <!-- Enviar formulário -->
+                <br>
+                <input type="submit">
+            </form>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus necessitatibus iste sed magnam laborum commodi
+                voluptatem neque, recusandae omnis? At, eum ut reprehenderit
+                voluptas cupiditate tenetur. Officia ea labore nesciunt?
+            </p>
+
+        </fieldset>
+    </main>
+
+    <footer>
+        <p><small>Ios - Instituto da Oportunidade Social (&copy;)</small></p>
+    </footer>
+
+</body>
+
+</html>

@@ -6,7 +6,7 @@ Todas as atividades são hospedadas remotamente pelo GitHub.
 ## Sumário
 
 <dl>
-  
+
   <!--  Aulas de Git  -->
   <dt><strong>GIT</strong></dt>
   <dd>
@@ -14,9 +14,10 @@ Todas as atividades são hospedadas remotamente pelo GitHub.
       <li>Introdução ao Git</li>
       <li>Primeiros passos</li>
       <li>Comandos básicos e GitHub</li>
+      <li>Branches, pull e clone</li>
     </ol>
   </dd>
-  
+
   <!--  Aulas de HTML  -->
   <dt><strong>HTML</strong></dt>
   <dd>
