@@ -6,7 +6,6 @@ Todas as atividades são hospedadas remotamente pelo GitHub.
 ## Sumário
 
 <dl>
-
   <!--  Aulas de Git  -->
   <dt><strong>GIT</strong></dt>
   <dd>
