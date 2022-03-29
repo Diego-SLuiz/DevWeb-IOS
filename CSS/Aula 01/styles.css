@@ -71,6 +71,7 @@ body
     align-items: center;
     background-color: #f3eded;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .item-title
