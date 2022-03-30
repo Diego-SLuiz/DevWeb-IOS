@@ -1,0 +1,33 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+body
+{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h2
+{
+    color: hsla(335, 100%, 29%);
+    font-size: 1.50em;
+}
+
+label
+{
+    color: rgb(28, 28, 28);
+    font-size: 1.25em;
+}
+
+p
+{
+    font-weight: 700;
+    color: #272626;
+}
+
+header
+{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    background-color: rgba(68, 68, 66)
+}
