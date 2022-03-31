@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body
+{
+    font-family: 'Merriweather', serif;
+    background-color: #32373b;
+}
+
+.title
+{
+    font-size: 2em;
+    font-weight: 600;
+    color: #F4B860;
+}
+
+.sub-title
+{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #4B88A2;
+}
+
+.text
+{
+    font-size: 1em;
+    font-weight: 400;
+    color: #BFB8AD;
+}
+
+.credit
+{
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #BB0A21;
+}
