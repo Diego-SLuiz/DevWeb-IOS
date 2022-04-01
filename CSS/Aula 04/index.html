@@ -3,7 +3,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Document</title>
+    <title>Filmes Preferidos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -11,56 +11,140 @@
 
 <body>
     <header>
-        <h1 id="main-title">Filmes Preferidos</h1>
+        <section id="movie-category">
+
+            <article class="category-item">
+                <h2 class="sub-title">Romance</h2>
+
+                <ol start="1">
+                    <li class="movie-ref"><a href="#titanic">Titanic</a></li>
+                    <li class="movie-ref"><a href="#meu-primeiro-amor">Meu Primeiro Amor</a></li>
+                    <li class="movie-ref"><a href="#uma-linda-mulher">Uma Linda Mulher</a></li>
+                </ol>
+            </article>
+
+            <article class="category-item">
+                <h2 class="sub-title">Ficção</h2>
+
+                <ol start="1">
+                    <li class="movie-ref"><a href="#exterminador-do-futuro">O Exterminador do Futuro</a></li>
+                    <li class="movie-ref"><a href="#de-volta-para-o-futuro">De Volta Para o Futuro</a></li>
+                    <li class="movie-ref"><a href="#indiana-jones">Indiana Jones - Reino da Caveira de Cristal</a></li>
+                </ol>
+            </article>
+
+            <article class="category-item">
+                <h2 class="sub-title">Terror</h2>
+
+                <ol start="1">
+                    <li class="movie-ref"><a href="#sexta-feira-13">Sexta-feira 13</a></li>
+                    <li class="movie-ref"><a href="#hora-do-pesadelo">A Hora do Pesadelo</a></li>
+                </ol>
+            </article>
+
+        </section>
+
+        <h1 id="main-title">Lista de Filmes Preferidos!</h1>
+        <hr id="separator">
+
     </header>
 
     <main>
+        <section id="movie-catalog">
 
-        <article id="film">
-            <h2 class="sub-title">Filmes</h2>
+            <article id="titanic" class="movie-item">
+                <p class="movie-title">Titanic</p>
 
-            <ol start="1">
-                <li class="catalog-item catalog-item-1">Titanic</li>
-                <li class="catalog-item catalog-item-1">Meu Primeiro Amor</li>
-                <li class="catalog-item catalog-item-1">Uma Linda Mulher</li>
-            </ol>
+                <img class="movie-poster" src="assets/titanic.jpg">
 
-            <ol start="10">
-                <li class="catalog-item catalog-item-2">O Exterminador do Futuro I</li>
-                <li class="catalog-item catalog-item-2">De Volta Para o Futuro I II III</li>
-                <li class="catalog-item catalog-item-2">Indiana Jones</li>
-            </ol>
+                <p class="movie-info">
+                    Um artista pobre e uma jovem rica se conhecem e se apaixonam na fatídica jornada do Titanic, em 1912. Embora esteja noiva do arrogante herdeiro de uma siderúrgica, a jovem desafia sua família e amigos em busca do verdadeiro amor.
+                </p>
+            </article>
+            <hr class="separator">
 
-            <ol start="20">
-                <li class="catalog-item catalog-item-3">Sexta-feira 13</li>
-                <li class="catalog-item catalog-item-3">A Hora do Pesadelo</li>
-            </ol>
-        </article>
+            <article id="meu-primeiro-amor" class="movie-item">
+                <p class="movie-title">Meu Primeiro Amor</p>
 
+                <img class="movie-poster" src="assets/meu_primeiro_amor.jpg">
+
+                <p class="movie-info">
+                    Vada Sultenfuss, uma garota de 11 anos, é obcecada com a morte, pois sua mãe morreu quando a garota nasceu e seu pai, Harry Sultenfuss, é um agente funerário que não lhe dá muita atenção. Vada é apaixonada por Jake Bixler, seu professor de inglês, e é muito amiga de Thomas J. Sennett, um garoto que é alérgico a tudo. Quando Harry contrata Shelly DeVoto, uma maquiadora, para os funerais e se apaixona por ela, Vada se sente rejeitada e quer fazer qualquer coisa para separá-los.
+                </p>
+            </article>
+            <hr class="separator">
+
+            <article id="uma-linda-mulher" class="movie-item">
+                <p class="movie-title">Uma Linda Mulher</p>
+
+                <img class="movie-poster" src="assets/uma_linda_mulher.jpg">
+
+                <p class="movie-info">
+                    Durante uma viagem de negócios a Los Angeles, Edward, um executivo que compra e fragmenta empresas para vendê-las, encontra a prostituta Vivian. Edward a contrata para ficar com ele durante uma semana a fim de acompanhá-lo nos jantares de negócios. Os dois se aproximam e descobrem que há vários obstáculos para serem superados até que possam unir seus mundos tão diferentes.
+                </p>
+            </article>
+            <hr class="separator">
+
+            <article id="exterminador-do-futuro" class="movie-item">
+                <p class="movie-title">O Exterminador do Futuro</p>
+
+                <img class="movie-poster" src="assets/exterminador_do_futuro.jpg">
+
+                <p class="movie-info">
+                    Disfarçado de humano, o assassino conhecido como o Exterminador (Arnold Schwarzenegger) viaja de 2029 a 1984 para matar Sarah Connor (Linda Hamilton). Enviado para proteger Sarah está Kyle Reese (Michael Biehn), que divulga a chegada do Skynet, um sistema de inteligência artificial que detonará um holocausto nuclear. Sarah é o alvo porque a Skynet sabe que seu futuro filho comandará a luta contra eles. Com o implacável Exterminador os perseguindo, Sarah e Kyle tentam sobreviver.
+                </p>
+            </article>
+            <hr class="separator">
+
+            <article id="de-volta-para-o-futuro" class="movie-item">
+                <p class="movie-title">De Volta Para o Futuro</p>
+
+                <img class="movie-poster" src="assets/de_volta_para_o_futuro.jpg">
+
+                <p class="movie-info">
+                    Marty McFly, um adolescente de uma pequena cidade californiana, é transportado para a década de 1950 quando a experiência do excêntrico cientista Doc Brown dá errado. Viajando no tempo em um carro modificado, Marty conhece versões jovens de seus pais e precisa fazer com que eles se apaixonem, ou então ele deixará de existir. Para complicar, Marty precisa voltar para casa a tempo de salvar o cientista.
+                </p>
+            </article>
+            <hr class="separator">
+
+            <article id="indiana-jones" class="movie-item">
+                <p class="movie-title">Indiana Jones - Reino da Caveira de Cristal</p>
+
+                <img class="movie-poster" src="assets/indiana_jones.jpg">
+
+                <p class="movie-info">
+                    Durante a Guerra Fria, Indiana Jones e o jovem Mutt buscam a Caveira de Cristal, um objeto místico de grande valor, mas logo percebem que não estão sozinhos. Soviéticos liderados pela cruel Irina Spalko também querem o objeto para tentar dominar o mundo através dele.
+                </p>
+            </article>
+            <hr class="separator">
+
+            <article id="sexta-feira-13" class="movie-item">
+                <p class="movie-title">Sexta-feira 13</p>
+
+                <img class="movie-poster" src="assets/sexta-feira_13.jpg">
+
+                <p class="movie-info">
+                    A história do homicído em Crystal Lake não impede que os instrutores montem um acampamento de verão no bosque. Moradores supersticiosos advertem sobre o ocorrido, mas os jovens Jack, Alice, Bill, Marcie e Ned, prestam pouca atenção aos mais velhos e acabam sendo perseguidos por um assassino brutal. A medida em que são esquartejados, baleados e esfaqueados, os instrutores lutam para manterem-se vivos contra um adversário implacável.
+                </p>
+            </article>
+            <hr class="separator">
+
+            <article id="hora-do-pesadelo" class="movie-item">
+                <p class="movie-title">A Hora do Pesadelo</p>
+
+                <img class="movie-poster" src="assets/hora_do_pesadelo.jpg">
+
+                <p class="movie-info">
+                    Um grupo de adolescentes tem pesadelos horríveis, em que são atacados por um homem deformado com garras de aço. Ele apenas aparece durante o sono e, para escapar, é preciso acordar. Os crimes vão ocorrendo seguidamente, até que se descobre que o ser misterioso é na verdade Freddy Krueger, um homem que molestou crianças na rua Elm e que foi queimado vivo pela vizinhança. Agora, Krueger pode ter retornado para se vingar daqueles que o mataram, através do sono.
+                </p>
+            </article>
+            <hr class="separator">
+
+        </section>
     </main>
 
     <footer>
-        <h2 class="sub-title">Poster</h2>
-
-        <section id="poster">
-            <article>
-                <img class="poster-image" src="assets/titanic.jpg">
-                <img class="poster-image" src="assets/meu_primeiro_amor.jpg">
-                <img class="poster-image" src="assets/uma_linda_mulher.jpg">
-            </article>
-
-            <article>
-                <img class="poster-image" src="assets/exterminador_do_futuro.jpg">
-                <img class="poster-image" src="assets/de_volta_para_o_futuro.jpg">
-                <img class="poster-image" src="assets/indiana_jones.jpg">
-            </article>
-
-            <article>
-                <img class="poster-image" src="assets/sexta-feira_13.jpg">
-                <img class="poster-image" src="assets/hora_do_pesadelo.jpg">
-            </article>
-        </section>
-
+        <img id="credits" src="https://ios.org.br/wp-content/uploads/2021/01/logo-istituto-oportunidade-social.svg">
     </footer>
 </body>
 
