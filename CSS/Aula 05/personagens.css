@@ -1,10 +1,3 @@
-@charset "utf-8";
-
-html
-{
-    background-color: black;
-}
-
 body
 {
     min-height: 100vh;
@@ -121,14 +114,15 @@ main > div > section > article > figure > img
     width: 50%;
 }
 
+/*
 main > div > section > article > figure > figcaption
 {
     font-size: 1.5em;
     font-weight: 300;
     color: white;
-}
+} */
 
-main > div > section > article > ul
+/* main > div > section > article > ul
 {
     display: flex;
     flex-flow: column nowrap;
@@ -140,7 +134,7 @@ main > div > section > article > ul > li
     font-weight: 600;
     font-style: italic;
     color: white;
-}
+} */
 
 footer
 {
