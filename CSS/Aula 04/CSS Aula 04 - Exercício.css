@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+body
+{
+    min-height: 100vh;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header
+{
+    margin-bottom: 1rem;
+}
+
+header #menu
+{
+    background-color: #000000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #menu img
+{
+    width: 10%;
+    padding-left: 1rem;
+}
+
+header #menu nav
+{
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+header #menu a
+{
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+main
+{
+    flex-grow: 1;
+}
+
+main #info
+{
+    width: 90%;
+    margin: auto;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+main #info h1
+{
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #2684db;
+    margin: 0;
+}
+
+main #info li
+{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #555555;
+}
+
+main #data
+{
+    width: 90%;
+    margin: auto;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+main #data h2
+{
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #2684db;
+    margin: 0;
+}
+
+main #data table
+{
+    table-layout: fixed;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+main #data th
+{
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+main #data td
+{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+main #data .row-even
+{
+    background-color: #dddddd;
+}
+
+footer #about
+{
+    background-color: #000000;
+}
+
+footer #about ul
+{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+footer #about a
+{
+    width: 5%;
+}
+
+footer #about img
+{
+    width: 100%;
+}
