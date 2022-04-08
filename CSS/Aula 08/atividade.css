@@ -80,9 +80,9 @@ main #content .row
 {
     padding: 1rem;
     margin: 1rem;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* border: 1px solid #750e1c; */
-    /* border-radius: 10px; */
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #750e1c;
+    border-radius: 10px;
 }
 
 main #content .row figure img
