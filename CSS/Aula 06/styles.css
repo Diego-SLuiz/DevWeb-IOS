@@ -11,6 +11,8 @@ body
 header #menu
 {
     background-color: #241924;
+    border-top: 2px solid #000000;
+    border-top-style: dotted;
 
     display: flex;
     flex-wrap: wrap;
