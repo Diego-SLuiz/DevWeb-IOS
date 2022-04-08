@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url('assets/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    margin: 0;
+    padding: 0;
+}
+
+header #menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #menu p
+{
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #b8152b;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+header #menu nav
+{
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+header #menu nav a
+{
+    background-color: #333333;
+    padding: 3px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #b8152b;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+main
+{
+    flex-grow: 1;
+}
+
+main #content
+{
+    display: flex;
+    flex-direction: column;
+}
+
+main #content h1
+{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #eeeeee;
+}
+
+main #content hr
+{
+    width: 30%;
+}
+
+main #content .row
+{
+    padding: 1rem;
+    margin: 1rem;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* border: 1px solid #750e1c; */
+    /* border-radius: 10px; */
+}
+
+main #content .row figure img
+{
+    height: 400px;
+}
+
+main #content .row figure figcaption
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #eeeeee;
+    font-style: italic;
+}
+
+main #content .row p
+{
+    letter-spacing: 2px;
+    color: #eeeeee;
+}
+
+main #content .row em
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+main #content .row li
+{
+    font-weight: 600;
+    color: #eeeeee;
+}
+
+main #content .row .image-left
+{
+    float: left;
+}
+
+main #content .row .image-right
+{
+    float: right;
+}
+
+footer #about
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p
+{
+    color: #eeeeee;
+    text-align: center;
+}
+
+
+footer #about p
+{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #eeeeee;
+}
+
+footer #about hr
+{
+    width: 30%;
+}
+
+footer #about ol
+{
+    margin: 0;
+    padding: 1rem 0;
+}
+
+footer #about li
+{
+    color: #eeeeee;
+}
