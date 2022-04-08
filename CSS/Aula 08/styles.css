@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+img
+{
+    width: 400px;
+
+}
+
+.image-1
+{
+    float: left;
+}
+
+.image-2
+{
+    float: right;
+}
+
+.image-3
+{
+    float: left;
+}
+
+/*
+.text-1
+{
+    clear: none;
+} */
+
+.container-1
+{
+    margin-top: 200px;
+}
