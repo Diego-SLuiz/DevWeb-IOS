@@ -1,21 +1,9 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Reggae+One&display=swap');
 
-html
-{
-    height: 100%;
-    min-height: 100vh;
-}
-
 body
 {
-    display: flex;
-    flex-direction: column;
-
-    background-color: #393E41;
     font-family: 'Abel', sans-serif;
-    height: 100%;
-    min-height: 100vh;
     padding: 0;
     margin: 0;
 }
@@ -25,6 +13,7 @@ header #menu
     background-color: #241924;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -37,6 +26,7 @@ header #menu h1
     text-align: center;
     color: #EEEEEE;
     padding-left: 1rem;
+    margin: 0;
 }
 
 header #menu nav
@@ -54,39 +44,101 @@ header #menu a
     text-decoration: none;
     text-align: center;
     color: #EEEEEE;
+
+    padding: 2px;
+    border-radius: 20px;
+    background-color: #c06262;
+}
+
+header #menu a:hover
+{
+    background-color: #a10f0f;
 }
 
 main
 {
-    height: 100%;
-    flex-grow: 1;
-
     background-image: url('assets/background.jpg');
-    background-position: center center;
-    background-size: cover;
     background-repeat: no-repeat;
-
-    display: flex;
-    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 main #content
 {
-    height: 100%;
-    flex-grow: 1;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-top: 2rem;
 }
 
 main #content .row
 {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+main #content .row figure
+{
+    width: 10%;
+}
+
+main #content .row figure img
+{
+    height: 300px;
+    /* width: 100%; */
+}
+
+main #content .row figure figcaption
+{
+    font-family: 'Reggae One', cursive;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #EEEEEE;
+}
+
+main #content .row article
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main #content .row article .emphasis
+{
+    font-family: 'Reggae One', cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #EEEEEE;
     width: 100%;
-    height: 30%;
+}
 
-    background-color: rgba(255, 255, 255, 0.5);
+main #content .row article p
+{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #EEEEEE;
+}
 
+footer #about
+{
+    background-color: #241924;
+    padding: 1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+footer #about a
+{
+
+    font-family: 'Reggae One', cursive;
+    font-size: 2rem;
+    /* text-decoration: none; */
+    color: #EEEEEE;
 }
