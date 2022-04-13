@@ -152,6 +152,33 @@ img:hover
     padding: 1rem;
 }
 
+#content #info
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#content #info article
+{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#content #info ul
+{
+    margin: 0;
+    padding: 4rem 0;
+}
+
+#content #info li
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #d9dfda;
+
+}
+
 #content #news
 {
     width: 90%;
