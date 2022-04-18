@@ -1,5 +1,6 @@
 html, body
 {
+    scroll-behavior: smooth;
     background-color: #333333;
     height: 100%;
     margin: 0;
@@ -214,4 +215,59 @@ html, body
     color: #EEEEEE;
     margin: 0;
     letter-spacing: 2px;
+}
+
+@media (max-width: 768px)
+{
+    #menu
+    {
+        flex-direction: column;
+    }
+
+    #menu img
+    {
+        padding: 2rem;
+    }
+
+    #menu nav
+    {
+        flex-direction: column;
+    }
+
+    #content #concept
+    {
+        margin: 0;
+    }
+
+    #content
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    #content #info
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #content #info figure
+    {
+        width: 90%;
+    }
+
+    #content #skills
+    {
+        flex-direction: column;
+    }
+
+    #content #references div
+    {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
 }
