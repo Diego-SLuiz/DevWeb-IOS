@@ -1,0 +1,102 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#menu
+{
+    padding: 20vh 0;
+}
+
+#menu h1
+{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#menu h1 span
+{
+    color: #4178df;
+}
+
+#menu p
+{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#content .card
+{
+    background-color: #EEEEEE;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#content .card:nth-child(even) img
+{
+    order: 1;
+}
+
+#content .card img
+{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#content .card article
+{
+    padding: 1rem;
+}
+
+#content .card h2
+{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333333;
+}
+
+#content .card p
+{
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-indent: 2rem;
+}
+
+#content .card a
+{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 600;
+    color: #EEEEEE;
+    background: #333333;
+    padding: 5px 20px;
+    /* border-radius: 5px; */
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#content .card a:hover
+{
+    background-color: #555555;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
