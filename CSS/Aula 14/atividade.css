@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* basic config */
+html, body
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* global settings */
+::selection
+{
+    background-color: #74e7c1;
+    color: #000000;
+}
+
+/* header topbar config */
+header
+{
+    box-shadow: 0px 0px 3px black;
+    padding: 1rem;
+}
+
+header h1
+{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #222222;
+    margin: 0;
+}
+
+header h2
+{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #444444;
+    margin: 0;
+}
+
+/* main layout */
+main
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 3rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* card layout */
+main .card
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "image-1 info image-2";
+    grid-auto-rows: minmax(300px, auto);
+    gap: 1rem;
+}
+
+/* first card layout */
+main .card:first-child article
+{
+    grid-column: span 1;
+}
+
+main .card:first-child figure:first-child
+{
+    grid-area: image-1;
+}
+
+main .card:first-child figure:last-child
+{
+    grid-area: image-2;
+}
+
+/* switch images positions */
+main .card:nth-child(odd) figure
+{
+    grid-area: image-1;
+}
+
+main .card:nth-child(even) figure
+{
+    grid-area: image-2;
+}
+
+main .card article
+{
+    grid-area: info;
+    grid-column: span 2;
+}
+
+/* card style */
+main .card img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+main .card h2
+{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: #222222;
+    margin: 0;
+}
+
+main .card p
+{
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-indent: 2rem;
+    color: #444444;
+}
+
+main .card figure
+{
+    position: relative;
+    margin: 0;
+}
+
+main .card figure:hover
+{
+    filter: brightness(0.5);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+main .card figcaption
+{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    color: #CCCCCC;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* about */
+footer
+{
+    background-color: #444444;
+}
+
+footer p
+{
+    text-align: center;
+    color: #CCCCCC;
+    margin: 0;
+}
