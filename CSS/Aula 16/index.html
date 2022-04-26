@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <title>Bootstrap - 2</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section class="container mb-3">
+        <!-- Elemento form -->
+        <form>
+
+            <div class="mb-3">
+                <label for="input-nome" class="form-label">Nome</label>
+                <input type="text" id="input-nome" class="form-control" placeholder="Digite seu nome">
+            </div>
+
+            <div class="mb-3">
+                <label for="input-profissao" class="form-label">Profissão</label>
+                <input type="text" id="input-profissao" class="form-control" placeholder="Digite sua profissão">
+            </div>
+
+            <div class="mb-3">
+              <label for="input-email" class="form-label">Email</label>
+              <input type="email" id="input-email" class="form-control" placeholder="Digite seu email">
+            </div>
+
+            <div class="mb-3">
+                <label for="label-datalist" class="form-label">Cidade</label>
+                <input class="form-control" list="datalistOptions" id="label-datalist" placeholder="Digite sua cidade">
+
+                <datalist id="datalistOptions">
+                    <option value="Belo Horizonte"></option>
+                    <option value="São Paulo"></option>
+                    <option value="Santos"></option>
+                    <option value="Porto Alegre"></option>
+                    <option value="Recife"></option>
+                    <option value="Outra"></option>
+                </datalist>
+            </div>
+
+            <div class="mb-3">
+                <label for="select-formacao" class="form-label">Formação</label>
+
+                <select id="select-formacao" class="form-control">
+                    <option value="fundamental">Ensino Fundamental</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="superior">Ensino Superior</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="input-mensagem" class="form-label">Mensagem</label>
+              <input type="text-area" id="input-mensagem" class="form-control" placeholder="Digite sua mensagem">
+            </div>
+
+            <div class="mb-3">
+                <label for="input-file" class="form-label">Enviar Arquivos</label>
+                <br>
+                <input id="input-file" type="file">
+                <br>
+                <p class="form-text">Apenas arquivos png e jpg</p>
+            </div>
+
+            <div class="mb-3">
+                <label for="input-color" class="form-label">Seletor de Cores</label>
+                <input type="color" value="#021BFC" title="Escolha a sua Cor" id="input-color" class="form-control form-control-color">
+            </div>
+
+            <div class="mb-3">
+                <input type="checkbox" class="form-check-input" id="input-check">
+                <label class="form-check-label" for="input-check">Concordo</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <section class="container mb-3">
+        <!-- Tabela Primeiro Exemplo -->
+        <table class="table table-striped mb-3">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Primeiro Nome</th>
+                    <th scope="col">Segundo Nome</th>
+                    <th scope="col">Idade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>24</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>34</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Tabela Segundo Exemplo -->
+        <table class="table table-bordered table-hover table-sm">
+            <caption>Tabela 01: Dinheiro guardado mensalmente</caption>
+
+            <thead>
+            <tr>
+                <th scope="col">Mês</th>
+                <th scope="col">Valor</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr class="table-primary">
+                    <td>Janeiro</td>
+                    <td>R$100,00</td>
+                </tr>
+
+                <tr class="table-success">
+                    <td>Fevereiro</td>
+                    <td>R$50,00</td>
+                </tr>
+
+                <tr class="table-danger">
+                    <td>Março</td>
+                    <td>R$25,00</td>
+                </tr>
+
+                <tr class="table-warning">
+                    <td>Abril</td>
+                    <td>R$40,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="container mb-3">
+        <!-- Lista básica -->
+        <ul class="list-group mb-3">
+            <li class="list-group-item active" aria-current="true">Item Um</li>
+            <li class="list-group-item">Item Dois</li>
+            <li class="list-group-item">Item Três</li>
+            <li class="list-group-item disabled" aria-disabled="true">Item Quatro</li>
+        </ul>
+
+        <!-- Lista com links -->
+        <ul class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" ariacurrent="true">Link atual</a>
+            <a href="#" class="list-group-item list-group-item-action">Segundo link</a>
+            <a href="#" class="list-group-item list-group-item-action">Terceiro link</a>
+            <a href="#" class="list-group-item list-group-item-action">Quarto link</a>
+        </ul>
+   </section>
+
+   <section class="container mb-3">
+       <!-- Lista com botões -->
+        <ul class="list-group mb-3">
+            <button type="button" class="list-group-item list-group-item-action active" ariacurrent="true">Botão atual</button>
+            <button type="button" class="list-group-item list-group-itemaction">Segundo botão</button>
+            <button type="button" class="list-group-item list-group-itemaction">Terceiro botão</button>
+            <button type="button" class="list-group-item list-group-itemaction">Quarto botão</button>
+        </ul>
+
+        <!-- Lista com efeito flush -->
+        <ol class="list-group list-group-flush mb-3">
+            <li class="list-group-item">Item Um</li>
+            <li class="list-group-item">Item Dois</li>
+            <li class="list-group-item">Item três</li>
+            <li class="list-group-item">Item Quarto</li>
+        </ol>
+
+        <!-- Lista colorida -->
+        <ul class="list-group">
+            <li class="list-group-item">Item com estilo padrão na lista</li>
+            <li class="list-group-item list-group-item-primary">Item com estilo primary na lista</li>
+            <li class="list-group-item list-group-item-secondary">Item com estilo secondary na lista</li>
+            <li class="list-group-item list-group-item-success">Item com estilo success na lista</li>
+            <li class="list-group-item list-group-item-danger">Item com estilo danger na lista</li>
+            <li class="list-group-item list-group-item-warning">Item com estilo warning na lista</li>
+            <li class="list-group-item list-group-item-info">Item com estilo info na lista</li>
+            <li class="list-group-item list-group-item-light">Item com estilo light na lista</li>
+            <li class="list-group-item list-group-item-dark">Item com estilo dark na lista</li>
+        </ul>
+   </section>
+
+    <section class="container mb-3">
+       <!-- Exemplo card -->
+        <div class="card mb-3" style="width: 18rem;">
+            <img src="./assets/sobre-ios.png" class="card-img-top" alt="...">
+
+            <div class="card-body">
+                <h5 class="card-title">Garanta a sua formação profissional</h5>
+                <p class="cardtext">
+                    O IOS lançou uma edição especial dos seus cursos, que vão acontecer de forma online, com encontros presenciais (mediante orientações de saúde de cada região) e, claro, totalmente gratuitos.
+                </p>
+                <a href="#" class="btn btn-dark">Saiba Mais</a>
+            </div>
+        </div>
+
+        <!-- Cards com listas exemplo 01 -->
+        <div class="card mb-3" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Um item</li>
+                <li class="list-group-item">Um segundo item</li>
+                <li class="list-group-item">Um terceiro item</li>
+            </ul>
+        </div>
+
+        <!-- Cards com listas exemplo 02 -->
+        <div class="card mb-3" style="width: 18rem;">
+            <h5 class="card-header">Cabeçalho Exemplo 02</h5>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Um item</li>
+                <li class="list-group-item">Um segundo item</li>
+                <li class="list-group-item">Um terceiro item</li>
+            </ul>
+        </div>
+
+        <!-- Card com diversos elementos-->
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/imagem_01.png" class="card-img-top" alt="...">
+
+            <div class="card-body">
+                <h5 class="card-title">Título do Card</h5>
+                <p class="cardtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, soluta.</p>
+            </div>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Um item</li>
+                <li class="list-group-item">Um segundo item</li>
+                <li class="list-group-item">Um terceiro item</li>
+            </ul>
+
+            <div class="card-body">
+                <a href="#" class="card-link">Um link do Card</a>
+                <a href="#" class="card-link">Outro link</a>
+            </div>
+        </div>
+    </section>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
