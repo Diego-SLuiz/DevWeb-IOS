@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Bootstrap - Atividade</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <!-- Default CSS -->
+    <link rel="stylesheet" href="atividade.css">
+</head>
+
+<body>
+    <!-- Static info header -->
+    <header id="menu-top" class="py-1">
+        <div class="container d-flex align-items-start flex-column flex-md-row text-light fw-bold">
+            <p class="mx-3 my-0">
+                <i class="bi bi-envelope"></i> <span>debra.holt@example.com</span>
+            </p>
+
+            <p class="mx-3 m-0">
+                <i class="bi bi-telephone-fill"></i> <span>(219) 555-0114</span>
+            </p>
+
+            <ul id="social-links" class="ms-md-auto p-0 ms-3 me-3 my-0">
+                <a href="#home"><i class="text-light bi bi-facebook"></i></a>
+                <a href="#home"><i class="text-light bi bi-twitter"></i></a>
+                <a href="#home"><i class="text-light bi bi-instagram"></i></a>
+                <a href="#home"><i class="text-light bi bi-pinterest"></i></a>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Navigation menu bar -->
+    <nav id="menu-bar" class="fixed-top bg-light navbar navbar-expand-md">
+        <div class="container">
+            <p id="logo-name" class="navbar-brand me-auto fs-3 fw-bold mb-0">Prixima<span>.</span></p>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main slide -->
+    <section>
+        <div id="main-slide" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="./assets/bg_banner1.jpg">
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="./assets/bg_banner2.jpg">
+                </div>
+            </div>
+
+            <a href="#main-slide" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+
+            <a href="#main-slide" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+
+            <div id="main-banner" class="text-light text-uppercase">
+                <p class="fs-5 fw-bold">We craft digital experiences</p>
+                <h1>Design driven for <br> professionals</h1>
+                <div>
+                    <a href="#home">Get Started</a>
+                    <a href="#home">Our Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About marketing -->
+    <section id="about" class="container d-flex justify-content-center align-items-center p-5">
+        <div>
+            <div class="d-flex">
+                <img src="./assets/icon6.png">
+
+                <div>
+                    <h3>Digital Marketing</h3>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <img src="./assets/icon4.png">
+
+                <div>
+                    <h3>E-mail Marketing</h3>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <img src="./assets/icon5.png">
+
+                <div>
+                    <h3>Buisness Marketing</h3>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/about.png">
+
+    </section>
+
+    <!-- Banner analytics -->
+    <section id="analytics">
+        <div class="container text-light d-flex justify-content-around px-5">
+            <div>
+                <h2>90K+</h2>
+                <p>Happy Clients</p>
+            </div>
+
+            <div>
+                <h2>45M</h2>
+                <p>Lines of Code</p>
+            </div>
+
+            <div>
+                <h2>191</h2>
+                <p>Total Downloads</p>
+            </div>
+
+            <div>
+                <h2>380K</h2>
+                <p>YouTube Subscribers</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- What we do -->
+    <section class="container">
+        <div>
+            <h2>What We Do?</h2>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old
+            </p>
+        </div>
+
+        <div>
+            <div>
+                <div class="card">
+                    <img src="./assets/icon1.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Scripts -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
