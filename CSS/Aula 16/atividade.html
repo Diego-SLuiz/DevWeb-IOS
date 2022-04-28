@@ -3,7 +3,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Bootstrap - Atividade</title>
+    <title>Bootstrap - Atividade II</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -35,11 +35,11 @@
                 <i class="bi bi-telephone-fill"></i> <span>(219) 555-0114</span>
             </p>
 
-            <ul id="social-links" class="ms-md-auto p-0 ms-3 me-3 my-0">
-                <a href="#home"><i class="text-light bi bi-facebook"></i></a>
-                <a href="#home"><i class="text-light bi bi-twitter"></i></a>
-                <a href="#home"><i class="text-light bi bi-instagram"></i></a>
-                <a href="#home"><i class="text-light bi bi-pinterest"></i></a>
+            <ul class="social-links ms-md-auto p-0 ms-3 me-3 my-0">
+                <a href="#menu-top"><i class="text-light bi bi-facebook"></i></a>
+                <a href="#menu-top"><i class="text-light bi bi-twitter"></i></a>
+                <a href="#menu-top"><i class="text-light bi bi-instagram"></i></a>
+                <a href="#menu-top"><i class="text-light bi bi-pinterest"></i></a>
             </ul>
         </div>
     </header>
@@ -50,14 +50,14 @@
             <p id="logo-name" class="navbar-brand me-auto fs-3 fw-bold mb-0">Prixima<span>.</span></p>
 
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#home" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#home" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="#home" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="#home" class="nav-link">Team</a></li>
-                <li class="nav-item"><a href="#home" class="nav-link">Reviews</a></li>
-                <li class="nav-item"><a href="#home" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#home" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#menu-top" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#team-section" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="#blog-section" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#menu-top" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -87,8 +87,8 @@
                 <p class="fs-5 fw-bold">We craft digital experiences</p>
                 <h1>Design driven for <br> professionals</h1>
                 <div>
-                    <a href="#home">Get Started</a>
-                    <a href="#home">Our Work</a>
+                    <a href="#menu-top">Get Started</a>
+                    <a href="#menu-top">Our Work</a>
                 </div>
             </div>
         </div>
@@ -162,7 +162,7 @@
     </section>
 
     <!-- What we do -->
-    <section class="container">
+    <section id="services" class="container">
 
         <!-- Services banner -->
         <div class="text-center content-banner">
@@ -281,7 +281,7 @@
     </section>
 
     <!-- Portfolio -->
-    <section class="container">
+    <section id="portfolio" class="container">
         <div class="text-center content-banner">
             <h2>Successful Projects</h2>
             <p>
@@ -367,7 +367,7 @@
     </section>
 
     <!-- Team members -->
-    <section class="container">
+    <section id="team-section" class="container mb-5">
         <div class="content-banner text-center">
             <h2>Team Members</h2>
             <p>
@@ -375,43 +375,228 @@
             </p>
         </div>
 
-        <div class="row gx-3">
+        <div id="team" class="row gx-3">
             <div class="col-4">
+
                 <div class="card">
-                    <img src="assets/team_1.jpg" class="card-img-top">
+                    <div class="img-wrapper">
+                        <img src="assets/team_1.jpg" class="card-img-top">
+
+                        <div class="social-links overlay d-flex justify-content-center align-items-center">
+                            <a href="#menu-top"><i class="text-light bi bi-facebook"></i></a>
+                            <a href="#menu-top"><i class="text-light bi bi-twitter"></i></a>
+                            <a href="#menu-top"><i class="text-light bi bi-instagram"></i></a>
+                            <a href="#menu-top"><i class="text-light bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+
                     <div class="card-body">
                         <h2 class="card-title">Marvin McKinney</h2>
                         <p class="card-text">Marketing Coordinator</p>
                     </div>
                 </div>
 
-                <div class="overlay d-flex">
-
-                </div>
             </div>
 
             <div class="col-4">
+
                 <div class="card">
-                    <img src="assets/team_2.jpg" class="card-img-top">
+                    <div class="img-wrapper">
+                        <img src="assets/team_2.jpg" class="card-img-top">
+
+                        <div class="social-links overlay d-flex justify-content-center align-items-center">
+                            <a href="#menu-top"><i class="text-light bi bi-facebook"></i></a>
+                            <a href="#menu-top"><i class="text-light bi bi-twitter"></i></a>
+                            <a href="#menu-top"><i class="text-light bi bi-instagram"></i></a>
+                            <a href="#menu-top"><i class="text-light bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+
                     <div class="card-body">
                         <h2 class="card-title">Kathryn Murphy</h2>
                         <p class="card-text">Ethical Hacker</p>
                     </div>
                 </div>
+
             </div>
 
             <div class="col-4">
+
                 <div class="card">
-                    <img src="assets/team_3.jpg" class="card-img-top">
+                    <div class="img-wrapper">
+                        <img src="assets/team_3.jpg" class="card-img-top">
+
+                        <div class="social-links overlay d-flex justify-content-center align-items-center">
+                            <a href="#menu-top"><i class="text-light bi bi-facebook"></i></a>
+                            <a href="#menu-top"><i class="text-light bi bi-twitter"></i></a>
+                            <a href="#menu-top"><i class="text-light bi bi-instagram"></i></a>
+                            <a href="#menu-top"><i class="text-light bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+
                     <div class="card-body">
                         <h2 class="card-title">Darrel Steward</h2>
                         <p class="card-text">Software Developer</p>
                     </div>
                 </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Team members slide -->
+    <section id="reviews">
+        <div class="p-5 text-center text-light">
+            <div id="team-slide" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="./assets/team_1.jpg" class="member-icon my-3">
+                        <h3 class="member-name">Marvin McKinney</h3>
+                        <h5 class="member-job">Marketing Coordinator</h5>
+
+                        <p class="member-info lead">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt debitis perspiciatis ut eius aut quos iusto odit quibusdam numquam! Minima enim quos a quod ab blanditiis, nihil inventore! Facere, dolore.
+                        </p>
+
+                        <span class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </span>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./assets/team_2.jpg" class="member-icon my-3">
+                        <h3 class="member-name">Kathryn Murphy</h3>
+                        <h5 class="member-job">Ethical Hacker</h5>
+
+                        <p class="member-info lead">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt debitis perspiciatis ut eius aut quos iusto odit quibusdam numquam! Minima enim quos a quod ab blanditiis, nihil inventore! Facere, dolore.
+                        </p>
+
+                        <span class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </span>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./assets/team_3.jpg" class="member-icon my-3">
+                        <h3 class="member-name">Darrel Steward</h3>
+                        <h5 class="member-job">Software Developer</h5>
+
+                        <p class="member-info lead">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt debitis perspiciatis ut eius aut quos iusto odit quibusdam numquam! Minima enim quos a quod ab blanditiis, nihil inventore! Facere, dolore.
+                        </p>
+
+                        <span class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <a href="#team-slide" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+
+                <a href="#team-slide" class="carousel-control-next" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog posts -->
+    <section id="blog-section" class="container">
+        <div class="content-banner text-center">
+            <h2>Blog Post</h2>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old
+            </p>
+        </div>
+
+        <div id="blog" class="row gx-3 text-center">
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/project1.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Web Design trends in 2022</h3>
+                        <p class="card-text lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro suscipit laboriosam delectus animi nesciunt fugiat numquam doloremque, magnam eum nostrum.
+                        </p>
+                    </div>
+
+                    <a href="#menu-top" class="card-btn">Programming</a>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/project3.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Web Design trends in 2022</h3>
+                        <p class="card-text lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro suscipit laboriosam delectus animi nesciunt fugiat numquam doloremque, magnam eum nostrum.
+                        </p>
+                    </div>
+
+                    <a href="#menu-top" class="card-btn">Web Design</a>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/project5.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Web Design trends in 2022</h3>
+                        <p class="card-text lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro suscipit laboriosam delectus animi nesciunt fugiat numquam doloremque, magnam eum nostrum.
+                        </p>
+                    </div>
+
+                    <a href="#menu-top" class="card-btn">Marketing</a>
+                </div>
             </div>
         </div>
 
     </section>
+
+    <!-- Prixima credits footer -->
+    <footer id="credits">
+        <div class="background-wrapper">
+            <div class="text-center text-light">
+                <h4 class="fs-1 fw-bold">Prixima<span>.</span></h4>
+                <p class="fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iure culpa dicta, similique facilis suscipit ullam inventore incidunt unde et.
+                </p>
+
+                <ul class="social-links">
+                    <a href="#menu-top"><i class="text-light bi bi-facebook"></i></a>
+                    <a href="#menu-top"><i class="text-light bi bi-twitter"></i></a>
+                    <a href="#menu-top"><i class="text-light bi bi-instagram"></i></a>
+                    <a href="#menu-top"><i class="text-light bi bi-pinterest"></i></a>
+                </ul>
+
+                <p class="pt-5">@2022 Copyright (&copy;) - Diego</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap Scripts -->
     <script

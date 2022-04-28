@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
+/* Prevent header overlaping content */
+html {
+    scroll-padding-top: 70px; /* height of sticky header */
+}
+
 body
 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -16,7 +21,7 @@ body
     vertical-align: middle;
 }
 
-#social-links a
+.social-links a
 {
     width: 32px;
     height: 32px;
@@ -27,7 +32,7 @@ body
     justify-content: center;
 }
 
-#social-links a:hover
+.social-links a:hover
 {
     transition: all 0.25s ease;
     transform: scale(1.2);
@@ -172,20 +177,20 @@ body
 
 .content-banner
 {
-    padding: 100px 0;
+    padding: 50px 0;
     width: 50%;
     margin: 0 auto;
 }
 
 .content-banner h2
 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
 .content-banner p
 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: #5e5b5b;
 }
@@ -199,7 +204,7 @@ body
 
 #portfolio-slide .carousel-item
 {
-    max-height: 80vh;
+    max-height: 90vh;
 }
 
 #portfolio-slide .carousel-item img
@@ -208,5 +213,126 @@ body
     width: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 8px;
 }
+
+#team .card .img-wrapper
+{
+    position: relative;
+}
+
+#team .card .overlay
+{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f57a32;
+    transition: all 1s ease;
+}
+
+#team .card:hover .overlay
+{
+    opacity: 0.75;
+}
+
+#team .card .social-links
+{
+    gap: 1rem;
+}
+
+#team .card .social-links a
+{
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#reviews
+{
+    background-image: url("./assets/bg_banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#reviews > div
+{
+    background-color: rgba(12, 39, 51, 0.815);
+}
+
+#team-slide .member-icon
+{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+#team-slide .member-info
+{
+    width: 50%;
+    margin: 1rem auto;
+}
+
+#blog .card
+{
+    position: relative;
+}
+
+#blog .card:hover
+{
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#blog .card .card-btn
+{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: #f57a32;
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+#blog .card .card-btn:hover
+{
+    background-color: #f0a67b;
+}
+
+footer
+{
+    background-image: url("./assets/bg_banner2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .background-wrapper
+{
+    background-color: rgba(12, 39, 51, 0.815);
+}
+
+footer .background-wrapper > div
+{
+    padding: 50px 0;
+    width: 40%;
+    margin: 2rem auto 0 auto;
+}
+
+footer .social-links
+{
+    margin: 0;
+    padding: 0;
+}
+
+footer h4 span
+{
+    color: #f57a32;
+}
+
+
