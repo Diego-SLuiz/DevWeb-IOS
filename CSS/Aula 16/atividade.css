@@ -169,3 +169,44 @@ body
     font-size: 4rem;
     font-weight: 800;
 }
+
+.content-banner
+{
+    padding: 100px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.content-banner h2
+{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.content-banner p
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #5e5b5b;
+}
+
+#services-area .card:hover
+{
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#portfolio-slide .carousel-item
+{
+    max-height: 80vh;
+}
+
+#portfolio-slide .carousel-item img
+{
+    filter: brightness(75%);
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
