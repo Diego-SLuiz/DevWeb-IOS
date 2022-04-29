@@ -57,7 +57,7 @@
                 <li class="nav-item"><a href="#team-section" class="nav-link">Team</a></li>
                 <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
                 <li class="nav-item"><a href="#blog-section" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#menu-top" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a></li>
+                <li class="nav-item"><a href="#menu-top" class="nav-link" data-bs-toggle="modal" data-bs-target="#contact-modal">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -446,6 +446,43 @@
 
     </section>
 
+    <!-- Rating table -->
+    <section class="container my-5">
+        <table class="table">
+            <thead class="bg-dark text-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Job</th>
+                    <th scope="col">Rating</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Marvin McKinney</td>
+                    <td>Marketing Coordinator</td>
+                    <td>4.5 Stars</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Kathryn Murphy</td>
+                    <td>Ethical Hacker</td>
+                    <td>4.5 Stars</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Darrel Steward</td>
+                    <td>Software Developer</td>
+                    <td>4.5 Stars</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <!-- Team members slide -->
     <section id="reviews">
         <div class="p-5 text-center text-light">
@@ -598,22 +635,57 @@
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1">
-        <div class="modal-dialog">
+    <!-- Contact modal -->
+    <div id="contact-modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
+                <div class="modal-body text-center p-0">
 
-                <div class="modal-body">
-                    <h1 class="fw-bold fs-1">Get in touch</h1>
-                    <p class="lead">Feel free to contact us and we will get back to you as soon as possible</p>
-                </div>
+                    <div class="row">
+                        <img class="col-5 img-fluid" src="./assets/c2.jpg">
 
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                        <div class="col-7 py-3">
+                            <h1 class="fw-bold fs-1">Get in touch</h1>
+                            <p class="lead">Feel free to contact us and we will get back to you as soon as possible</p>
+
+                            <form class="text-start row g-3 m-3">
+                                <span class="col-6 p-0 pe-3">
+                                    <label for="first-name" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="first-name" placeholder="Jon">
+                                </span>
+
+                                <span class="col-6 p-0">
+                                    <label for="last-name" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="last-name" placeholder="Doe">
+                                </span>
+
+                                <div class="col-12 p-0">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="jondoe@example.com">
+                                </div>
+
+                                <div class="col-12 p-0">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" cols="30" rows="4" class="form-control" placeholder="Your message"></textarea>
+                                </div>
+
+                                <ul class="col-12 p-0 list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <input type="checkbox" id="term-1" class="form-check-input">
+                                        <label for="term-1" class="">Lorem ipsum dolor sit amet consectetur.</label>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <input type="checkbox" id="term-2" class="form-check-input">
+                                        <label for="term-2" class="">Lorem ipsum dolor sit amet consectetur.</label>
+                                    </li>
+                                </ul>
+
+                                <button type="submit" class="btn btn-primary col-2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
