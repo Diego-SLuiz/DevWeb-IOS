@@ -1,0 +1,36 @@
+joana x 4
+bete x 4
+kelly x 2 
+(kelly = 1 joana = 2 bete = 3)
+
+
+
+
+
+Respostas 
+1)
+f
+
+2) Tabela verdade
+V V V V F
+V F V F F
+F V V F V
+F F F F V
+
+3)
+chove = gato no quarto ou sotão
+gato no quarto = rato na toca e queijo na geladeira
+queijo na mesa e gato no sotão = rato no quarto
+chove e queijo na mesa = gato? rato?
+gato no sotão rato no quarto
+
+4)
+1 - raquel gatos gosta de laranja maio branco e tem 11 anos
+2 = 55
+3 - ana cachorros fps 50
+4 - peixes gosta de morango maio verde e 8 anos
+
+
+
+
+
