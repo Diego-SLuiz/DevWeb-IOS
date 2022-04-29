@@ -1,0 +1,32 @@
+Lógica de fazer um bolo:
+
+// Definindo valores
+Definir os ingredientes;
+Verificar se possui os ingredientes:
+    Pegar e continuar caso tenha;
+    Desistir e chorar :( caso não tenha;
+Verificar os utensílios necessários;
+Buscar os utensílios necessários;	
+Levar os ingredientes e os utensílios para uma mesa;
+
+// Fazendo o bolo 
+Untar a forma com manteiga e farinha de trigo;
+Ligar o forno e deixar aquecer;
+Reservar um recipiente para preparar a massa:
+    No recipiente -> juntar os ingredientes necessários e mexer;
+Na forma untada -> colocar a mistura dos ingredientes;
+Levar a forma com a massa ao forno;
+
+// Gerenciando recursos
+Depois do tempo definido:
+    Desligar o forno;
+    Com uma luva térmica -> retirar o bolo do forno;
+    Colocar o bolo na mesa para repouso;
+Levar os utensílios usados para a pia:
+    Lavar os utensílios usados, secar e guardar.
+Verificar se há alguma sujeira:
+    Se sim -> limpar
+
+// Bolo feito
+Após aguardar o bolo esfriar:
+    Cortar e comer :)
