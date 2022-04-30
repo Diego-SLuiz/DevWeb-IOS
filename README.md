@@ -111,6 +111,7 @@
 
 <p>
     Introdução ao framework Bootstrap e os benefícios de utilizar um framework.
+    (No modo de visualização da página alguns recursos podem não funcionar corretamente)
 </p>
 
 <table>
@@ -208,5 +209,11 @@
     <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/CSS/Aula%2015">15</a></td>
     <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/CSS/Aula%2015/CSS%20Aula%2015.pdf">Bootstrap - 1</a></td>
     <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/CSS/Aula%2015/index.html">WebDev Bootcamp</a></td>
+</tr>
+    
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/CSS/Aula%2016">16</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/CSS/Aula%2016/CSS%20Aula%2016.pdf">Bootstrap - 2</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/CSS/Aula%2016/atividade.html">Premium Website</a></td>
 </tr>
 </table>
