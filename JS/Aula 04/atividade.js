@@ -1,32 +1,47 @@
-let party = ["Joaquim", "José", "Silva", "Xavier"];
-let joined = "";
-let exited = "";
+// Parte 1
+console.log( "Atividade 1" )
 
-const exit_party = ( name ) => { console.log( `${name} saiu da festa` ) }
-const join_party = ( name ) => { console.log( `${name} entrou na festa` ) }
+let festa = ["Joaquim", "José", "Silva", "Xavier"];
+let entrou = "";
+let saiu = "";
 
-console.log( `A festa começou com ${party}` );
+const entrar_festa = ( nome ) => { console.log( `${nome} entrou na festa` ) }
+const sair_festa = ( nome ) => { console.log( `${nome} saiu da festa` ) }
 
-joined = "Amanda";
-party.unshift( joined );
-join_party( joined );
+console.log( `A festa começou com ${festa}` );
 
-exited = party.pop();
-exit_party( exited );
+entrou = "Amanda";
+festa.unshift( entrou );
+entrar_festa( entrou );
 
-joined = "Zuleica";
-party.push(joined);
-join_party( joined );
+saiu = festa.pop();
+sair_festa( saiu );
 
-exited = party.shift();
-exit_party( exited );
+entrou = "Zuleica";
+festa.push( entrou );
+entrar_festa( entrou );
 
-exited = party[ party.length - 2 ];
-delete party[ party.length - 2 ];
-exit_party( exited );
+saiu = festa.shift();
+sair_festa( saiu );
 
-joined = "Silvana"
-party.splice( party.length - 1, 0, joined );
-join_party( joined );
+saiu = festa[ festa.length - 2 ];
+delete festa[ festa.length - 2 ];
+sair_festa( saiu );
 
-console.log( `Ficaram ${party.length - 1} pessoas na festa: ${party}` );
+entrou = "Silvana"
+festa[ festa.length - 2 ] = "Silvana";
+entrar_festa( entrou );
+
+console.log( `Ficaram ${festa.length} pessoas na festa: ${festa}` );
+
+// Parte 2
+console.log( "Atividade 2" )
+
+let frutas = ["laranja", "maça", "banana", "manga", "abacaxi"];
+console.log( `Lista de frutas : ${frutas}`);
+
+frutas.sort();
+console.log( `Lista organizada de frutas : ${frutas}`);
+
+let index = frutas.indexOf( "maça" );
+console.log( `Posição da maça na lista: ${index}` );
