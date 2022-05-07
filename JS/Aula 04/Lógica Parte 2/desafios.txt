@@ -1,0 +1,18 @@
+	Alberto	Bernardo	Custódio	Danilo
+Violinista	O	X	X	X
+Pianista	X	X	X	O
+Saxofonista	X	O	X	X
+Baterista	X	X	O	X
+				
+Resposta: A)	Danilo	Bernardo	Custódio	Alberto
+				
+				
+				
+				
+	Henrique	Pedro	Luís	Rogério
+Isabel	X	X	O	X
+Joana	O	X	X	X
+Maria	X	X	X	O
+Ana	X	O	X	X
+				
+Resposta: B)				
