@@ -1,4 +1,6 @@
-const TABELA_INSS = 
+alert( "Checar console!!!" )
+
+const TABELA_INSS =
 [
     [0, 1212, 0.075],
     [1212, 2427, 0.09],
@@ -8,7 +10,7 @@ const TABELA_INSS =
 
 function Funcionario ( nome, salario, vinculo )
 {
-    let funcionario = 
+    let funcionario =
     {
         "nome": nome,
         "salario": salario,
@@ -22,7 +24,7 @@ function Funcionario ( nome, salario, vinculo )
 
 function calcularInss( funcionario )
 {
-    if ( funcionario.vinculo == "PJ" ) 
+    if ( funcionario.vinculo == "PJ" )
     {
         funcionario.valor_inss = 0;
         return
@@ -37,7 +39,7 @@ function calcularInss( funcionario )
         }
     }
 
-    funcionario.valor_inss = TABELA_INSS[index][1] * TABELA_INSS[index][2];
+    funcionario.valor_inss = ( TABELA_INSS[index - 1][1] * TABELA_INSS[index - 1][2] ).toFixed( 2 );
 }
 
 let funcionario1 = Funcionario( "Jon Doe", 1000, "PJ" );
