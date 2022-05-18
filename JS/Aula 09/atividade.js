@@ -1,3 +1,5 @@
+alert( "Checar console!" )
+
 // Atividade 1
 function oddEven ( number, index )
 {
