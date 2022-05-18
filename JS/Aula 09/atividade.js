@@ -23,7 +23,7 @@ console.log( `\nMenor que 18: \n${lowNumbers.join( " " )}` );
 // Atividade 2
 function Aluno ( nome, idade, nota, ano )
 {
-    let aluno = 
+    let aluno =
     {
         "nome": nome,
         "idade": idade,
@@ -39,16 +39,29 @@ let aluno_2 = Aluno( "Bruno", 16, 6, "2°C" );
 let aluno_3 = Aluno( "Veronica", 16, 9, "2°C" );
 let aluno_4 = Aluno( "Marta", 15, 5, "3°C" );
 let aluno_5 = Aluno( "Maria", 14, 4, "1°F" );
-const alunos = [aluno_1, aluno_2, aluno_3, aluno_4, aluno_5]
+const alunos = [aluno_1, aluno_2, aluno_3, aluno_4, aluno_5];
 
-let turmas = alunos.map( ( aluno ) => `Nome: ${aluno.nome} Turma: ${aluno.ano}` )
-let segundoAno = alunos.filter( ( aluno ) => aluno.ano.includes( "2" ) )
+let turmas = alunos.map( ( aluno ) => `Nome: ${aluno.nome} Turma: ${aluno.ano}` );
+let segundoAno = alunos.filter( ( aluno ) => aluno.ano.includes( "2" ) );
+let media = alunos.reduce( ( nota, aluno ) => nota + aluno.nota, 0 ) / alunos.length;
 
-console.log( "\nAlunos:" )
-console.log( alunos )
+console.log( "\nAlunos:" );
+console.log( alunos );
 
-console.log( "\nTurmas" )
-console.log( turmas )
+console.log( "\nTurmas" );
+console.log( turmas );
 
-console.log( "\nSegundo Ano" )
-console.log( segundoAno )
+console.log( "\nSegundo Ano" );
+console.log( segundoAno );
+
+console.log( "\nMédia" );
+console.log( media );
+
+if ( media < 7 )
+{
+    console.log( "Os alunos NÃO estão na média!" );
+}
+else
+{
+    console.log( "Os alunos na média!" );
+}
