@@ -9,41 +9,41 @@
 </head>
 
 <body>
-    <input type="text" id="test">
-    
-    <h1>Cadastro Alunos</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam itaque error voluptatum suscipit dolorum possimus illo, assumenda ratione blanditiis ut accusantium at nam quibusdam praesentium expedita aut nesciunt aliquam.
-    </p>
+    <header>
+        <h1>Cadastro Alunos</h1>
 
-    <form id="student-form">
-        <label for="name"></label>
-        <input type="text" id="name" placeholder="Nome">
-        
-        <label for="age"></label>
-        <input type="number" id="age" placeholder="Idade">
-        
-        <label for="group"></label>
-        <input type="text" id="group" placeholder="Turma">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam itaque error voluptatum suscipit dolorum possimus illo, assumenda ratione blanditiis ut accusantium at nam quibusdam praesentium expedita aut nesciunt aliquam.
+        </p>
+    </header>
 
-        <button type="button" id="student-confirm">Adicionar</button>
-    </form>
+    <main>
+        <form id="student-form">
+            <input type="text" placeholder="Nome">
+            <input type="number" placeholder="Idade">
+            <input type="text" placeholder="Turma">
+            <input type="text" placeholder="Tema">
 
-    <br>
+            <button type="button" id="add-student-button">Adicionar</button>
+            <button type="button" id="remove-student-button">Remover</button>
+            <button type="button" id="update-student-button">Atualizar</button>
+            <button type="button" id="reset-student-button">Limpar</button>
+        </form>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Turma</th>
-            </tr>
-        </thead>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Turma</th>
+                    <th>Tema</th>
+                </tr>
+            </thead>
 
-        <tbody id="student-content">
-
-        </tbody>
-    </table>
+            <tbody id="student-tbody">
+            </tbody>
+        </table>
+    </main>
 
     <script src="script.js"></script>
 </body>
