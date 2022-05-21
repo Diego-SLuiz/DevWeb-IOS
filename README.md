@@ -111,7 +111,7 @@
 
 <p>
     Introdução ao framework Bootstrap e os benefícios de utilizar um framework.
-    (No modo de visualização da página alguns recursos podem não funcionar corretamente)
+    (No modo de visualização da página, alguns recursos podem não funcionar corretamente)
 </p>
 
 <table>
@@ -210,10 +210,99 @@
     <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/CSS/Aula%2015/CSS%20Aula%2015.pdf">Bootstrap - 1</a></td>
     <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/CSS/Aula%2015/index.html">WebDev Bootcamp</a></td>
 </tr>
-    
+
 <tr>
     <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/CSS/Aula%2016">16</a></td>
     <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/CSS/Aula%2016/CSS%20Aula%2016.pdf">Bootstrap - 2</a></td>
     <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/CSS/Aula%2016/atividade.html">Premium Website</a></td>
+</tr>
+</table>
+
+<h3>JavaScript</h3>
+<p>
+    Adicionando funcionalidades aos elementos de uma página com JavaScript. Fundamentos do JavaScript e como automatizar interações em uma página.
+</p>
+
+<p>
+    Principais tópicos: Lógica de programação, Seletores de elementos, Eventos do usuário e manipulação do DOM.
+</p>
+
+<table>
+<tr>
+    <th>Aula</th>
+    <th>Conteúdo</th>
+    <th>Atividade</th>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2001">01</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2001/JS%20Aula%2001.pdf">Conceito</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2001/index.html">Olá Mundo</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2002">02</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2002/JS%20Aula%2002.pdf">Variáveis e Operadores</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2002/index.html">Calcular IMC</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2003">03</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2003/JS%20Aula%2003.pdf">Objetos e Funções</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2003/atividade.html">Botões e Eventos</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2004">04</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2004/JS%20Aula%2004%20(2).pdf">Arrays</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2004/atividade.html">Manipulando Arrays</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2005">05</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2005/JS%20Aula%2005.pdf">Strings</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2005/index.html">Manipulando Strings</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2006">06</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2006/JS%20Aula%2006.pdf">Array de Objetos</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2006/index.html">Manipulando Array com Objetos</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2007">07</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2007/JS%20Aula%2007.pdf">Condicionais</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2007/index.html">Calcular INSS</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2008">08</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2008/JS%20Aula%2008.pdf">Laço de Repetição</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2008/index.html">Calcular Tabuada</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2009">09</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2009/JS%20Aula%2009.pdf">Métodos de Array</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2009/index.html">Média dos Alunos</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2010">10</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2010/JS%20Aula%2010.pdf">Classes</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2010/index.html">Checar Aniversariantes</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2011">11</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2011/JS%20Aula%2011.pdf">DOM - Introdução</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2011/index.html">Inserindo Elementos</a></td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/tree/main/JS/Aula%2012">12</a></td>
+    <td><a href="https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2012/JS%20Aula%2012.pdf">DOM - Seletores</a></td>
+    <td><a href="https://htmlpreview.github.io/?https://github.com/Diego-SLuiz/DevWeb-IOS/blob/main/JS/Aula%2012/atividade.html">Umbrella Academy</a></td>
 </tr>
 </table>
