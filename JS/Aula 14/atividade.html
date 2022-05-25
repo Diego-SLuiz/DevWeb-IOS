@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1>Cadastro de Pessoas</h1>
+        <h1>Inscrições</h1>
     </header>
 
     <main>
@@ -33,7 +33,7 @@
 
             <div class="input-field">
                 <label for="id">ID</label>
-                <input type="number" id="id" placeholder="ID">
+                <input type="number" id="item-id" placeholder="ID">
             </div>
 
             <div>
@@ -43,7 +43,7 @@
         </form>
 
         <table id="main-table">
-            <thead>
+            <thead id="table-header">
                 <tr>
                     <th>Nome</th>
                     <th>Idade</th>
@@ -52,14 +52,7 @@
                 </tr>
             </thead>
 
-            <tbody>
-                <tr>
-                    <td>User Name</td>
-                    <td>99</td>
-                    <td>useremail@example.com</td>
-                    <td>1</td>
-                </tr>
-            </tbody>
+            <tbody id="table-content" ></tbody>
         </table>
     </main>
 
