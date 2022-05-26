@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./styles/atividade.css">
+    <title>Javascript - Aula 15</title>
+</head>
+
+<body>
+    <header>
+        <h1>Compras</h1>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <section class="item-category" id="item-form">
+                <h2>Item</h2>
+
+                <form class="d-flex justify-content-center align-items-end">
+                    <div class="d-flex flex-column">
+                        <label for="item-name" class="form-label fs-4">Nome</label>
+                        <input type="text" maxlength="20" id="item-name" class="form-control">
+                    </div>
+
+                    <div class="d-flex flex-column mx-3">
+                        <label for="item-value" class="form-label fs-4">Valor</label>
+                        <input type="number" id="item-value" class="form-control">
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <label for="item-quantity" class="form-label fs-4">Quantidade</label>
+                        <input type="number" id="item-quantity" class="form-control">
+                    </div>
+
+                    <button class="btn btn-dark mx-3">Adicionar</button>
+                </form>
+            </section>
+
+            <section class="d-flex mt-4">
+                <ul id="item-info" class="list-group">
+                    <h2 class="list-title">Informações</h2>
+                    <li class="list-group-item d-flex align-items-center">R$ 18,00 = Arroz Branco</li>
+                </ul>
+
+                <ul id="item-price" class="list-group">
+                    <h2 class="list-title">Preço</h2>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Quantidade: 2 = R$ 36,00
+
+                        <div class="list-buttons">
+                            <button class="btn btn-warning">-</button>
+                            <button class="btn btn-warning mx-2">+</button>
+                            <button class="btn btn-danger">X</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="item-category" id="item-total">
+                <h2>Total</h2>
+                <p id="total-value">R$ 36,00</p>
+            </section>
+
+        </section>
+    </main>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous">
+    </script>
+    <script src="./scripts/atividade.js"></script>
+</body>
+
+</html>
