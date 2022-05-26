@@ -15,46 +15,48 @@
     </header>
 
     <main>
-        <form id="main-form">
-            <div class="input-field">
-                <label for="name">Nome</label>
-                <input type="text" id="name" placeholder="Nome">
-            </div>
+        <section id="container">
+            <form id="main-form">
+                <div class="input-field">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Nome" class="input-area">
+                </div>
 
-            <div class="input-field">
-                <label for="birth">Nascimento</label>
-                <input type="date" id="birth" placeholder="Nascimento">
-            </div>
+                <div class="input-field">
+                    <label for="birth">Nascimento</label>
+                    <input type="date" id="birth" placeholder="Nascimento" class="input-area">
+                </div>
 
-            <div class="input-field">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email">
-            </div>
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email" class="input-area">
+                </div>
 
-            <div class="input-field">
-                <label for="id">ID</label>
-                <input type="number" id="item-id" placeholder="ID">
-            </div>
+                <div class="input-field">
+                    <label for="id">ID</label>
+                    <input type="number" id="item-id" placeholder="ID" class="input-area">
+                </div>
 
-            <div>
-                <button type="button" id="button-add" class="input-action">Adicionar</button>
-                <button type="button" id="button-del" class="input-action">Remover</button>
-            </div>
-        </form>
+                <div>
+                    <button type="button" id="button-add" class="input-action">Adicionar</button>
+                    <button type="button" id="button-del" class="input-action">Remover</button>
+                </div>
+            </form>
 
-        <table id="main-table">
-            <thead id="table-header">
-                <tr>
-                    <th>Nome</th>
-                    <th>Idade</th>
-                    <th>Email</th>
-                    <th>ID</th>
-                </tr>
-            </thead>
+            <table id="main-table">
+                <thead id="table-header">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Email</th>
+                        <th>ID</th>
+                    </tr>
+                </thead>
 
-            <tbody id="table-content" ></tbody>
-        </table>
-    </main>
+                <tbody id="table-content" ></tbody>
+            </table>
+        </main>
+        </section>
 
     <script src="./scripts/atividade.js"></script>
 </body>
