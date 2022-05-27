@@ -13,19 +13,22 @@ class Item
         let itemDecButton = document.createElement( "button" );
         itemDecButton.classList = "btn btn-warning";
         itemDecButton.innerText = "-";
+        itemDecButton.targetObject = this;
         itemDecButton.addEventListener( "click", this.decreaseItem );
         itemButtons.appendChild( itemDecButton );
 
         let itemIncButton = document.createElement( "button" );
         itemIncButton.classList = "btn btn-warning mx-2";
         itemIncButton.innerText = "+";
+        itemIncButton.targetObject = this;
         itemIncButton.addEventListener( "click", this.increaseItem );
         itemButtons.appendChild( itemIncButton );
 
         let itemRemButton = document.createElement( "button" );
         itemRemButton.classList = "btn btn-danger";
-        itemRemButton.addEventListener( "click", this.removeItem );
         itemRemButton.innerText = "X";
+        itemRemButton.targetObject = this;
+        itemRemButton.addEventListener( "click", this.removeItem );
         itemButtons.appendChild( itemRemButton );
 
         let itemPrice = document.createElement( "li" );
@@ -36,32 +39,31 @@ class Item
 
         itemInfoList.appendChild( itemInfo );
         itemPriceList.appendChild( itemPrice );
-        itemList.push( this );
 
-        this.getItemInfo()
+        this.getItemInfo();
     }
 
     getItemInfo ()
     {
         let name = itemNameInput.value;
-        name = name.trim().replace( /\s+/, " " );
+        name = name.trim().replace( /\s+/, " " ) || "Novo Item";
 
-        let value = itemValueInput.value;
-        value = value > 1000 ? 1000 : value < 0 ? 0 : value;
+        let value = Number( itemValueInput.value ) || 1;
+        value = value > 1000 ? 1000 : value < 1 ? 1 : value;
 
-        let quantity = itemQuantityInput.value;
-        quantity = quantity > 100 ? 100 : quantity < 0 ? 0 : quantity;
+        let quantity = Number( itemQuantityInput.value ) || 1;
+        quantity = quantity > 100 ? 100 : quantity < 1 ? 1 : quantity;
 
         this.itemName = name;
         this.itemValue = value;
         this.itemQuantity = quantity;
 
-        this.updateItemInfo()
+        this.updateItemInfo();
+        this.increaseTotalValue( quantity * value );
     }
 
     updateItemInfo ()
     {
-        let convertMoney = new Intl.NumberFormat( "pt-BR", { style: "currency", currency: "BRL" } );
         let itemValue = convertMoney.format( this.itemValue );
         let quantityValue = convertMoney.format( this.itemQuantity * this.itemValue );
 
@@ -69,40 +71,71 @@ class Item
         this.itemPrice.firstChild.nodeValue = `Quantidade: ${this.itemQuantity} = ${quantityValue}`;
     }
 
-    increaseItem ( event )
+    increaseTotalValue ( value )
     {
-        event.preventDefault();
-        this.itemQuantity --;
-        console.log( this )
+        itemTotalValue.currentValue += value;
+        itemTotalValue.innerText = convertMoney.format( itemTotalValue.currentValue );
     }
 
-    decreaseItem ( event )
+    decreaseTotalValue ( value )
     {
-        event.preventDefault();
-        this.itemQuantity ++;
-        console.log( this )
+        itemTotalValue.currentValue -= value;
+        itemTotalValue.innerText = convertMoney.format( itemTotalValue.currentValue );
     }
 
-    removeItem ( event )
+    increaseItem ()
     {
-        event.preventDefault();
-        event.target.parentElement.parentElement.remove(); // button > div > li.remove
+        if ( this.targetObject.itemQuantity >= 100 )
+        {
+            this.targetObject.itemQuantity = 100;
+            return;
+        }
+
+        this.targetObject.itemQuantity ++;
+        this.targetObject.updateItemInfo();
+        this.targetObject.increaseTotalValue( this.targetObject.itemValue );
+    }
+
+    decreaseItem ()
+    {
+        if ( this.targetObject.itemQuantity <= 1 )
+        {
+            this.targetObject.itemQuantity = 1;
+            return;
+        }
+
+        this.targetObject.itemQuantity --;
+        this.targetObject.updateItemInfo();
+        this.targetObject.decreaseTotalValue( this.targetObject.itemValue );
+    }
+
+    removeItem ()
+    {
+        let quantity = this.targetObject.itemQuantity;
+        let value = this.targetObject.itemValue;
+        this.targetObject.decreaseTotalValue( quantity * value );
+        this.targetObject.itemInfo.remove();
+        this.targetObject.itemPrice.remove();
     }
 }
 
-function addItem ( event )
+function createItem ( event )
 {
     event.preventDefault();
     new Item();
+    itemForm.reset();
 }
 
-const itemList = [];
-
+const convertMoney = new Intl.NumberFormat( "pt-BR", { style: "currency", currency: "BRL" } );
+const itemForm = document.getElementById( "item-form" )
+const itemTotalValue = document.getElementById( "total-value" )
 const itemInfoList = document.getElementById( "item-info" );
 const itemPriceList = document.getElementById( "item-price" );
 const itemNameInput = document.getElementById( "item-name" );
 const itemValueInput = document.getElementById( "item-value" );
 const itemQuantityInput = document.getElementById( "item-quantity" );
-const itemAddButton = document.getElementById( "add-item" );
+const itemAddButton = document.getElementById( "item-add" );
 
-itemAddButton.addEventListener( "click", addItem );
+itemAddButton.addEventListener( "click", createItem );
+itemTotalValue.currentValue = 0;
+

@@ -15,16 +15,16 @@
 
 <body>
     <header>
-        <h1>Compras</h1>
+        <h1>Lista de Compras</h1>
     </header>
 
     <main>
         <section class="container">
 
-            <section class="item-category" id="item-form">
+            <section class="item-category">
                 <h2>Item</h2>
 
-                <form class="d-flex justify-content-center align-items-end">
+                <form id="item-form" class="d-flex justify-content-center align-items-end">
                     <div class="d-flex flex-column">
                         <label for="item-name" class="form-label fs-4">Nome</label>
                         <input type="text" maxlength="20" id="item-name" class="form-control">
@@ -40,34 +40,23 @@
                         <input type="number" id="item-quantity" class="form-control">
                     </div>
 
-                    <button id="add-item" class="btn btn-dark mx-3">Adicionar</button>
+                    <button id="item-add" class="btn btn-dark mx-3">Adicionar</button>
                 </form>
             </section>
 
             <section class="d-flex mt-4">
                 <ul id="item-info" class="list-group">
                     <h2 class="list-title">Informações</h2>
-                    <li class="list-group-item d-flex align-items-center">R$ 18,00 = Arroz Branco</li>
                 </ul>
 
                 <ul id="item-price" class="list-group">
                     <h2 class="list-title">Preço</h2>
-
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Quantidade: 2 = R$ 36,00
-
-                        <div class="list-buttons">
-                            <button class="btn btn-warning">-</button>
-                            <button class="btn btn-warning mx-2">+</button>
-                            <button class="btn btn-danger">X</button>
-                        </div>
-                    </li>
                 </ul>
             </section>
 
             <section class="item-category" id="item-total">
                 <h2>Total</h2>
-                <p id="total-value">R$ 36,00</p>
+                <p id="total-value">R$ 0,00</p>
             </section>
 
         </section>
