@@ -38,12 +38,11 @@ class Item
         itemPriceList.appendChild( itemPrice );
         itemList.push( this );
 
-        // this.getItemInfo()
+        this.getItemInfo()
     }
 
     getItemInfo ()
     {
-
         let name = itemNameInput.value;
         name = name.trim().replace( /\s+/, " " );
 
@@ -56,6 +55,7 @@ class Item
         this.itemName = name;
         this.itemValue = value;
         this.itemQuantity = quantity;
+
         this.updateItemInfo()
     }
 
@@ -66,27 +66,27 @@ class Item
         let quantityValue = convertMoney.format( this.itemQuantity * this.itemValue );
 
         this.itemInfo.innerText = `${itemValue} = ${this.itemName}`;
-        this.itemPrice.innerText = `Quantidade: ${this.itemQuantity} = ${quantityValue}`;
+        this.itemPrice.firstChild.nodeValue = `Quantidade: ${this.itemQuantity} = ${quantityValue}`;
     }
 
     increaseItem ( event )
     {
         event.preventDefault();
         this.itemQuantity --;
-        this.updateItemInfo();
+        console.log( this )
     }
 
     decreaseItem ( event )
     {
         event.preventDefault();
         this.itemQuantity ++;
-        this.updateItemInfo();
+        console.log( this )
     }
 
     removeItem ( event )
     {
         event.preventDefault();
-        event.target.remove();
+        event.target.parentElement.parentElement.remove(); // button > div > li.remove
     }
 }
 
@@ -97,12 +97,12 @@ function addItem ( event )
 }
 
 const itemList = [];
+
 const itemInfoList = document.getElementById( "item-info" );
 const itemPriceList = document.getElementById( "item-price" );
-
 const itemNameInput = document.getElementById( "item-name" );
 const itemValueInput = document.getElementById( "item-value" );
 const itemQuantityInput = document.getElementById( "item-quantity" );
-const addItemButton = document.getElementById( "add-item" );
+const itemAddButton = document.getElementById( "add-item" );
 
-addItemButton.addEventListener( "click", addItem );
+itemAddButton.addEventListener( "click", addItem );
