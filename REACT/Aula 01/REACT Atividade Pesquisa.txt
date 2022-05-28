@@ -1,0 +1,19 @@
+1. O que é React:
+React é uma biblioteca JavaScript, com foco em facilitar a criação e manutenção de interface de usuários (UIs)
+Referência: https://reactjs.org/
+
+2. Diferença entre biblioteca e framework:
+Uma biblioteca é um conjunto de ferramentas convenientes para qual aquela biblioteca serve, como por exemplo: A biblioteca Math, que pode ser facilmente usada para calcular uma raiz quadrada ou hipotenusa. Já um framework, oferece um ambiente mais completo e restrito, no qual podemos trabalhar a partir dele, fazendo nossas próprias modificações e integrações.
+Referência: https://www.youtube.com/watch?v=sXA1zpv4DhA
+
+3. O que são props:
+Uma propriedade é comumente usada para enviar parâmetros e valores dinâmicos para um componente em React, da mesma forma que uma tag HTML pode ter atributos para modificar seu comportamento.
+Referência: https://www.youtube.com/watch?v=m7OWXtbiXX8
+
+4. O que são hooks:
+Um hook é uma forma de interferir no funcionamento e nos eventos de um determinado componente, por exemplo: quando um botão for renderizado, atualizado ou destruído. Isso permite um controle mais aprofundado sobre o componente.
+Referência: https://www.youtube.com/watch?v=d-aAs_4SQ7c
+
+5. O que são componentes:
+Um componente pode ser descrito como um bloco de código independente, que é usado para gerar um elemento na interface do usuário. Componentes são usados em conjunto, para formar algo maior e mais complexo.
+Referência: https://www.youtube.com/watch?v=1wZoGFF_oi4
