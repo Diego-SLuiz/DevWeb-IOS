@@ -49,7 +49,7 @@ function mostrarNome ()
     let sectionNome = document.querySelector( "#nome-usuario" );
     let sectionTitle = document.createElement( "h2" );
     let paragraphNome = document.createElement( "p" );
-    let nomeUsuario = prompt( "Insira seu nome:" );
+    let nomeUsuario = prompt( "Insira seu nome:" ).trim().replace( /\s+/, " " ) || "Usuário";
 
     // Checar se já existe um nome
     let tituloAtual = sectionNome.querySelectorAll( "h2" );
