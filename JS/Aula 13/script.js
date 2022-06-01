@@ -49,7 +49,7 @@ function mostrarNome ()
     let sectionNome = document.querySelector( "#nome-usuario" );
     let sectionTitle = document.createElement( "h2" );
     let paragraphNome = document.createElement( "p" );
-    let nomeUsuario = prompt( "Insira seu nome:" );
+    let nomeUsuario = prompt( "Insira seu nome:" ).trim().replace( /\s+/, " " ) || "Usuário";
 
     // Checar se já existe um nome
     let tituloAtual = sectionNome.querySelectorAll( "h2" );
@@ -68,11 +68,41 @@ function mostrarNome ()
     sectionNome.appendChild( paragraphNome );
 }
 
+function resetarMudancas ()
+{
+    let sectionNome = document.querySelector( "#nome-usuario" );
+    let sectionUmbrella = document.querySelector( "#umbrella-academy" );
+    let sectionTabuada = document.querySelector( "#calcular-tabuada" );
+
+    // Remover nome
+    while ( sectionNome.childElementCount )
+    {
+        sectionNome.children[0].remove();
+    }
+
+    // Remover imagem
+    while ( sectionUmbrella.childElementCount )
+    {
+        sectionUmbrella.children[0].remove();
+    }
+
+    // Remover tabuada
+    while ( sectionTabuada.childElementCount )
+    {
+        sectionTabuada.children[0].remove();
+    }
+
+    // Restaurar tema
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+}
+
 // Botões
 const buttons = document.querySelectorAll( ".B_12" );
 const buttonUmbrella = document.querySelector( "#B_01" );
 const buttonNome = document.querySelector( "#B_02" );
 const buttonTabuada = document.querySelector( "#B_03" );
+const buttonResetar = document.querySelector( "#B_04" );
 
 // Estilizar botões
 for ( let i = 0; i < buttons.length; i ++ )
@@ -87,3 +117,4 @@ for ( let i = 0; i < buttons.length; i ++ )
 buttonUmbrella.addEventListener( "click", mostrarImagem );
 buttonNome.addEventListener( "click", mostrarNome );
 buttonTabuada.addEventListener( "click", calcularTabuada );
+buttonResetar.addEventListener( "click", resetarMudancas )
