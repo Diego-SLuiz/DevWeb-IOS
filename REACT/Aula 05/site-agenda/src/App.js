@@ -27,10 +27,20 @@ function App() {
 		]
 	)
 
+	function deleteTask ( id )
+	{
+		setTasks( tasks.filter( ( task ) => task.id != id ) );
+	}
+
+	function setReminder ( id )
+	{
+		setTasks( tasks.map( ( task ) => task.id == id ? { ...task, reminder: ! task.reminder } : task ) );
+	}
+
 	return (
 		<div className="container">
 			<Header title="Tarefas"/>
-			<Tasks tasks={ tasks }/>
+			{ tasks.length ? <Tasks tasks={ tasks } onDelete={ deleteTask } onToggle={ setReminder }/> : <h3>Você nâo possui tarefas!</h3> }
     	</div>
 	)
 }
