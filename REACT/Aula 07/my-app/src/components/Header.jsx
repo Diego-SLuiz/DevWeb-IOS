@@ -1,8 +1,13 @@
+import NewTask from "./NewTask";
+
 function Header ( { title } )
 {
     return (
-        <div>
+        <div className="header card">
             <h1>{ title }</h1>
+            <div>
+                <NewTask/>
+            </div>
         </div>
     )
 }

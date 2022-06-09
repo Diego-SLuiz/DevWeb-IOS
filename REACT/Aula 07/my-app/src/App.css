@@ -1,9 +1,28 @@
-.task-list
+html, body
+{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card
 {
     border-radius: 10px;
     box-shadow: -1px 1px 3px rgba( 0, 0, 0, 0.25 );
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+.header
+{
+    display: flex;
+
 }
 
 .task-list .task-title
@@ -54,4 +73,11 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+.task-list .item-button:hover
+{
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
 }

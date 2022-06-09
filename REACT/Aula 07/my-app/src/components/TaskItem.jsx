@@ -13,21 +13,22 @@ function TaskItem ( { task, onToggle, onDelete } )
     let minutes = String( task.date.getMinutes() ).padStart( 2, "0" );
 
     // Ícone que será renderizado
-    let toggleOn = <FaToggleOn size={32} onClick={ () => onToggle( task ) }/>;
-    let toggleOff = <FaToggleOff size={32} onClick={ () => onToggle( task ) }/>;
+    let toggleOn = <span className="item-button"><FaToggleOn size={32} onClick={ () => onToggle( task ) }/></span>;
+    let toggleOff = <span className="item-button"><FaToggleOff size={32} onClick={ () => onToggle( task ) }/></span>;
+    let closeButton = <span className="item-button"><FaTimes size={32} color="red" onClick={ () => onDelete( task ) }/></span>
 
     return (
         <li className={ "task-item " + task.status }>
             <div className="item-content">
                 <h3 className="item-title">{ task.name }</h3>
                 <p className="item-text">{ task.description }</p>
-                <p className="item-text">{ task.status }</p>
+                {/* <p className="item-text">{ task.status }</p> */}
                 <p className="item-text">{ `Dia ${day} de ${monthName} (${weekDay}) - ${hour}:${minutes}` }</p>
             </div>
 
             <div className="item-buttons">
                 { task.status == "pending" ? toggleOff : toggleOn }
-                <FaTimes size={32} color="red" onClick={ () => onDelete( task ) }/>
+                { closeButton }
             </div>
         </li>
     )

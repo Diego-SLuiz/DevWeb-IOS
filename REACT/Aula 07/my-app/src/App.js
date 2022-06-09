@@ -65,7 +65,7 @@ function App ()
 	let completeTasksComponent = <TaskList title="Tarefas Concluídas" tasks={ completeTasks } onToggle={ moveTask } onDelete={ deleteTask }/>;
 
 	return (
-		<div>
+		<div className="container">
 			<Header title="Lista de Tarefas"/>
 			{ pendingTasks.length ? pendingTasksComponent : <h2>Não há tarefas pendentes!</h2> }
 			{ completeTasks.length ? completeTasksComponent : <h2>Não há tarefas concluídas!</h2> }
