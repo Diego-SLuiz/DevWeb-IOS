@@ -37,11 +37,6 @@
     border-right: 8px solid green;
 }
 
-.task-list .incomplete
-{
-    border-right: 8px solid red;
-}
-
 .task-list .pending
 {
     border-right: 8px solid yellow;
@@ -59,10 +54,4 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-}
-
-.task-list .item-button:hover
-{
-    transition: all 1s ease;
-    transform: scale( 1.1 );
 }

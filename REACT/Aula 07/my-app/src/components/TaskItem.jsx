@@ -3,7 +3,7 @@ import { FaTimes, FaToggleOn, FaToggleOff } from "react-icons/fa";
 const monthNames = [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ];
 const weekDays = [ "Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado" ];
 
-function TaskItem ( { task } )
+function TaskItem ( { task, onToggle, onDelete } )
 {
     // Converter data para dias da semana e converter nome de meses
     let monthName = monthNames[ task.date.getMonth() ];
@@ -13,8 +13,8 @@ function TaskItem ( { task } )
     let minutes = String( task.date.getMinutes() ).padStart( 2, "0" );
 
     // Ícone que será renderizado
-    let toggleOn = <FaToggleOn size={32}/>;
-    let toggleOff = <FaToggleOff size={32}/>;
+    let toggleOn = <FaToggleOn size={32} onClick={ () => onToggle( task ) }/>;
+    let toggleOff = <FaToggleOff size={32} onClick={ () => onToggle( task ) }/>;
 
     return (
         <li className={ "task-item " + task.status }>
@@ -26,8 +26,8 @@ function TaskItem ( { task } )
             </div>
 
             <div className="item-buttons">
-                { task.status == "pending" ? toggleOff : task.status == "complete" ? toggleOn : null }
-                <FaTimes size={32} color="red"/>
+                { task.status == "pending" ? toggleOff : toggleOn }
+                <FaTimes size={32} color="red" onClick={ () => onDelete( task ) }/>
             </div>
         </li>
     )
