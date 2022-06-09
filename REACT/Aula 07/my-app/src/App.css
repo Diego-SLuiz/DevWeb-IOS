@@ -1,0 +1,68 @@
+.task-list
+{
+    border-radius: 10px;
+    box-shadow: -1px 1px 3px rgba( 0, 0, 0, 0.25 );
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task-list .task-title
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.task-list .task-item
+{
+    list-style: none;
+    display: flex;
+    padding: 8px 0;
+    margin-bottom: 1rem;
+}
+
+.task-list .item-title
+{
+    margin: 0;
+}
+
+.task-list .item-text
+{
+    padding: 0 2rem;
+}
+
+.task-list .complete
+{
+    border-right: 8px solid green;
+}
+
+.task-list .incomplete
+{
+    border-right: 8px solid red;
+}
+
+.task-list .pending
+{
+    border-right: 8px solid yellow;
+}
+
+.task-list .item-content
+{
+    flex: 1 0 90%;
+}
+
+.task-list .item-buttons
+{
+    flex: 1 0 10%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.task-list .item-button:hover
+{
+    transition: all 1s ease;
+    transform: scale( 1.1 );
+}
