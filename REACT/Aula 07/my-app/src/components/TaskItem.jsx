@@ -22,7 +22,6 @@ function TaskItem ( { task, onToggle, onDelete } )
             <div className="item-content">
                 <h3 className="item-title">{ task.name }</h3>
                 <p className="item-text">{ task.description }</p>
-                {/* <p className="item-text">{ task.status }</p> */}
                 <p className="item-text">{ `Dia ${day} de ${monthName} (${weekDay}) - ${hour}:${minutes}` }</p>
             </div>
 

@@ -3,6 +3,7 @@ html, body
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .container
@@ -22,7 +23,36 @@ html, body
 .header
 {
     display: flex;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
 
+.header .header-title
+{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.header .header-buttons
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header .header-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header .header-button:hover
+{
+    cursor: pointer;
 }
 
 .task-list .task-title
@@ -80,4 +110,67 @@ html, body
     cursor: pointer;
     width: fit-content;
     height: fit-content;
+}
+
+.modal-background
+{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    filter: blur( 10 );
+}
+
+.modal-content
+{
+    background-color: #ffffff;
+    width: 640px;
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+}
+
+.modal-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.modal-body
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.modal-close
+{
+    width: fit-content;
+    height: fit-content;
+}
+
+.modal-close:hover
+{
+    cursor: pointer;
+}
+
+.input-field
+{
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-title
+{
+    font-size: 1.25rem;
+    font-weight: 600;
 }
