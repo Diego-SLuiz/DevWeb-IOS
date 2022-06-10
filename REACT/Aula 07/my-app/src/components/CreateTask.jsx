@@ -1,7 +1,36 @@
 import { FaTimes, FaPlusCircle } from "react-icons/fa";
 
-function CreateTask ( { onClose } )
+
+function CreateTask ( { onCreate, onClose } )
 {
+    function createNewTask ( onClose )
+    {
+        // Pegar valores inseridos no formulário
+        let name = document.getElementById( "task-name" ).value;
+        let description = document.getElementById( "task-description" ).value;
+        let day = document.getElementById( "task-date" ).value;
+        let hour = Number( document.getElementById( "task-time" ).value.slice( 0, 2 ) );
+        let minutes = Number( document.getElementById( "task-time" ).value.slice( 3, 5 ) );
+
+        // Criar uma nova data e hora
+        let date = new Date( day );
+        date.setHours( hour, minutes )
+
+        // Criar novo objeto task
+        let task =
+        {
+            // id: 3,
+            name: name,
+            description: description,
+            date: date,
+            status: "pending",
+        }
+
+        // Adicionar task e fechar a janela de nova task
+        onCreate( task );
+        onClose();
+    }
+
     return (
         <div>
             <div className="modal-background" onClick={ onClose }></div>
@@ -15,25 +44,27 @@ function CreateTask ( { onClose } )
                     <form>
                         <div className="input-field">
                             <label className="input-title">Título</label>
-                            <input type="text" className="task-name"/>
+                            <input type="text" id="task-name" className="task-input"/>
                         </div>
 
                         <div className="input-field">
                             <label className="input-title">Descrição</label>
-                            <textarea rows="6" className="task-description"></textarea>
+                            <textarea rows="4" id="task-description" className="task-input"></textarea>
                         </div>
 
-                        <div className="input-field">
-                            <label className="input-title">Data</label>
-                            <input type="date" className="task-date"/>
+                        <div className="input-datetime">
+                            <div className="input-field">
+                                <label className="input-title">Data</label>
+                                <input type="date" id="task-date" className="task-input"/>
+                            </div>
+
+                            <div className="input-field">
+                                <label className="input-title">Hora</label>
+                                <input type="time" id="task-time" className="task-input"/>
+                            </div>
                         </div>
 
-                        <div className="input-field">
-                            <label className="input-title">Hora</label>
-                            <input type="time" className="task-time"/>
-                        </div>
-
-                        <button type="button"><FaPlusCircle/> Adicionar</button>
+                        <button onClick={ () => createNewTask( onClose ) } className="task-confirm" type="button">Adicionar</button>
                     </form>
                 </div>
             </div>

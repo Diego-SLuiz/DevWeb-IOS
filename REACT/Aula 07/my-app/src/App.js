@@ -3,29 +3,33 @@ import Header from './components/Header';
 import TaskList from './components/TaskList';
 import './App.css';
 
-const defaultTasks =
-[
-	{
-		id: 1,
-		name: "Consulta no Dentista",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque repellendus dolorem nihil facere corrupti aliquid officiis veniam quibusdam quod.",
-		date: new Date(),
-		status: "complete",
-	},
-	{
-		id: 2,
-		name: "Reunião de Trabalho",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque repellendus dolorem nihil facere corrupti aliquid officiis veniam quibusdam quod.",
-		date: new Date(),
-		status: "pending",
-	},
-]
+// const defaultTasks =
+// [
+// 	{
+// 		id: 1,
+// 		name: "Consulta no Dentista",
+// 		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque repellendus dolorem nihil facere corrupti aliquid officiis veniam quibusdam quod.",
+// 		date: new Date(),
+// 		status: "complete",
+// 	},
+// 	{
+// 		id: 2,
+// 		name: "Reunião de Trabalho",
+// 		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque repellendus dolorem nihil facere corrupti aliquid officiis veniam quibusdam quod.",
+// 		date: new Date(),
+// 		status: "pending",
+// 	},
+// ]
+
+let idCounter = 1
 
 function App ()
 {
 	// Definindo state que representa uma lista de tasks
-	const [ pendingTasks, setPendingTasks ] = useState( defaultTasks.filter( ( task ) => task.status == "pending" ) );
-	const [ completeTasks, setCompleteTasks ] = useState( defaultTasks.filter( ( task ) => task.status == "complete" ) );
+	// const [ pendingTasks, setPendingTasks ] = useState( defaultTasks.filter( ( task ) => task.status == "pending" ) );
+	const [ pendingTasks, setPendingTasks ] = useState( [] );
+	// const [ completeTasks, setCompleteTasks ] = useState( defaultTasks.filter( ( task ) => task.status == "complete" ) );
+	const [ completeTasks, setCompleteTasks ] = useState( [] );
 
 	// Trocar a lista da task
 	function moveTask ( task )
@@ -58,7 +62,10 @@ function App ()
 	// Adicionar uma nova task para lista
 	function insertTask ( task )
 	{
-
+		console.log( idCounter )
+		task.id = idCounter;
+		idCounter += 1;
+		setPendingTasks( [ ...pendingTasks, task ] );
 	}
 
 	let pendingTasksComponent = <TaskList title="Tarefas Pendentes" tasks={ pendingTasks } onToggle={ moveTask } onDelete={ deleteTask }/>;
@@ -66,7 +73,7 @@ function App ()
 
 	return (
 		<div className="container">
-			<Header title="Lista de Tarefas"/>
+			<Header onCreate={ insertTask } title="Lista de Tarefas"/>
 			{ pendingTasks.length ? pendingTasksComponent : <h2>Não há tarefas pendentes!</h2> }
 			{ completeTasks.length ? completeTasksComponent : <h2>Não há tarefas concluídas!</h2> }
 		</div>

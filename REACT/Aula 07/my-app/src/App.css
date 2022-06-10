@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Tiro+Bangla&display=swap');
+
 html, body
 {
     min-height: 100vh;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Joan', serif;
 }
 
 .container
@@ -120,7 +123,6 @@ html, body
     top: 0;
     left: 0;
     background-color: rgba( 0, 0, 0, 0.5 );
-    filter: blur( 10 );
 }
 
 .modal-content
@@ -139,7 +141,7 @@ html, body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
 }
 
 .modal-body
@@ -163,9 +165,6 @@ html, body
 {
     display: flex;
     flex-direction: column;
-
-    border-bottom: 1px solid gray;
-    padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -173,4 +172,46 @@ html, body
 {
     font-size: 1.25rem;
     font-weight: 600;
+}
+
+.input-datetime
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-datetime *
+{
+    flex-basis: 49%;
+}
+
+.task-input
+{
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.task-confirm
+{
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 8px 24px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #3489eb;
+    border-radius: 8px;
+    border: none;
+    color: #fefefe;
+    transition: all 0.3s ease;
+}
+
+.task-confirm:hover
+{
+    transform: scale(1.05);
 }

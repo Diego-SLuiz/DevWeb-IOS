@@ -15,7 +15,7 @@ function TaskItem ( { task, onToggle, onDelete } )
     // Ícone que será renderizado
     let toggleOn = <span className="item-button"><FaToggleOn size={32} onClick={ () => onToggle( task ) }/></span>;
     let toggleOff = <span className="item-button"><FaToggleOff size={32} onClick={ () => onToggle( task ) }/></span>;
-    let closeButton = <span className="item-button"><FaTimes size={32} color="red" onClick={ () => onDelete( task ) }/></span>
+    let closeButton = <span className="item-button"><FaTimes size={32} color="red" onClick={ () => onDelete( task ) }/></span>;
 
     return (
         <li className={ "task-item " + task.status }>
