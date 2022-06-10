@@ -23,13 +23,21 @@ html, body
     margin-bottom: 1rem;
 }
 
+.center-text
+{
+    text-align: center;
+    padding: 2rem 0;
+}
+
 .header
 {
     display: flex;
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 1rem 3rem;
     display: flex;
     justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .header .header-title
@@ -70,7 +78,7 @@ html, body
 {
     list-style: none;
     display: flex;
-    padding: 8px 0;
+    padding: 8px;
     margin-bottom: 1rem;
 }
 
@@ -86,12 +94,12 @@ html, body
 
 .task-list .complete
 {
-    border-right: 8px solid green;
+    border-left: 8px solid green;
 }
 
 .task-list .pending
 {
-    border-right: 8px solid yellow;
+    border-left: 8px solid orange;
 }
 
 .task-list .item-content
@@ -119,7 +127,7 @@ html, body
 {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba( 0, 0, 0, 0.5 );
@@ -130,7 +138,7 @@ html, body
     background-color: #ffffff;
     width: 640px;
     height: 480px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50% );

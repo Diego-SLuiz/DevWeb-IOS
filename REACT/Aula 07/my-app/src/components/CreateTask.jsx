@@ -1,32 +1,43 @@
-import { FaTimes, FaPlusCircle } from "react-icons/fa";
-
+import { FaTimes } from "react-icons/fa";
 
 function CreateTask ( { onCreate, onClose } )
 {
+    // Criar novo objeto task
     function createNewTask ( onClose )
     {
-        // Pegar valores inseridos no formulário
+        // Validar nome
         let name = document.getElementById( "task-name" ).value;
+        name = name.trim().replace( /\s+/, " " ).slice( 0, 50 ) || "Nova Tarefa";
+
+        // Validar descrição
         let description = document.getElementById( "task-description" ).value;
+        description = description.trim().replace( /\s+/, " " ).slice( 0, 200 ) || "Descrição da tarefa...";
+
+        // Validar data do dia
         let day = document.getElementById( "task-date" ).value;
+        day = new Date( day );
+        day.setDate( day.getDate() + 1 );
+        day = isNaN( day.getTime() ) ? new Date() : day;
+
+        // Validar hora do dia
         let hour = Number( document.getElementById( "task-time" ).value.slice( 0, 2 ) );
+        hour = isNaN( hour ) ? 0 : hour;
+
+        // Validar minuto do dia
         let minutes = Number( document.getElementById( "task-time" ).value.slice( 3, 5 ) );
+        minutes = isNaN( minutes ) ? 0 : minutes;
 
-        // Criar uma nova data e hora
-        let date = new Date( day );
-        date.setHours( hour, minutes )
+        day.setHours( hour, minutes );
 
-        // Criar novo objeto task
+        // Criar tarefa, adicionar e fechar janela de criação
         let task =
         {
-            // id: 3,
             name: name,
             description: description,
-            date: date,
+            date: day,
             status: "pending",
         }
 
-        // Adicionar task e fechar a janela de nova task
         onCreate( task );
         onClose();
     }
@@ -36,7 +47,7 @@ function CreateTask ( { onCreate, onClose } )
             <div className="modal-background" onClick={ onClose }></div>
             <div className="modal-content card">
                 <div className="modal-header">
-                    <h1>Criar Tarefa</h1>
+                    <h2>Nova Tarefa</h2>
                     <span className="modal-close"><FaTimes size={ 32 } color="red" onClick={ onClose }/></span>
                 </div>
 
@@ -44,12 +55,12 @@ function CreateTask ( { onCreate, onClose } )
                     <form>
                         <div className="input-field">
                             <label className="input-title">Título</label>
-                            <input type="text" id="task-name" className="task-input"/>
+                            <input type="text" placeholder="Nova Tarefa" id="task-name" className="task-input"/>
                         </div>
 
                         <div className="input-field">
                             <label className="input-title">Descrição</label>
-                            <textarea rows="4" id="task-description" className="task-input"></textarea>
+                            <textarea rows="4" placeholder="Descrição da tarefa..." id="task-description" className="task-input"></textarea>
                         </div>
 
                         <div className="input-datetime">

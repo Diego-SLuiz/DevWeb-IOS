@@ -12,7 +12,7 @@ function TaskItem ( { task, onToggle, onDelete } )
     let hour = String( task.date.getHours() ).padStart( 2, "0" );
     let minutes = String( task.date.getMinutes() ).padStart( 2, "0" );
 
-    // Ícone que será renderizado
+    // Componentes que serão renderizados
     let toggleOn = <span className="item-button"><FaToggleOn size={32} onClick={ () => onToggle( task ) }/></span>;
     let toggleOff = <span className="item-button"><FaToggleOff size={32} onClick={ () => onToggle( task ) }/></span>;
     let closeButton = <span className="item-button"><FaTimes size={32} color="red" onClick={ () => onDelete( task ) }/></span>;
