@@ -1,6 +1,6 @@
 public class Main
 {
-    public static void main ( String[] args )
+    public static void main ( String [] args )
     {
         // Aluno 1
         Aluno aluno_1 = new Aluno( "Diego" );
