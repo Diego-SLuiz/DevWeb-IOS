@@ -11,7 +11,7 @@ public class Paridade
     // Inserir o valor que sera trabalhado
     public void inserirValor ()
     {
-        System.out.println( "Digite o valor do numero para verificar: " );
+        System.out.println( "\nDigite o valor do numero para verificar: " );
         this.valor = Paridade.entrada.nextInt();
     }
 
@@ -19,5 +19,6 @@ public class Paridade
     public void verificarParidade ()
     {
         boolean par = ( this.valor % 2 ) == 0;
+        System.out.println( "O numero " + this.valor + ( par ? " é " : " não é " ) + "par" );
     }
 }

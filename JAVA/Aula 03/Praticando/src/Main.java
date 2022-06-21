@@ -13,5 +13,10 @@ public class Main
         novoJogador.inserirNome();
         novoJogador.inserirPontos();
         novoJogador.verificarPontos();
+
+        // Verificar a paridade de um número
+        Paridade novoNumero = new Paridade();
+        novoNumero.inserirValor();
+        novoNumero.verificarParidade();
     }
 }
