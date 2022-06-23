@@ -2,7 +2,7 @@ public class Main
 {
     public static void main ( String [] args )
     {
-        // Comparar ordem de crescente dois nÃºmeros
+        // Comparar ordem de crescente dois números
         OrdemCrescente novoValor = new OrdemCrescente();
         novoValor.inserirValor();
         novoValor.compararOrdem();
