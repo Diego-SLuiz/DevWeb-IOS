@@ -1,6 +1,5 @@
 package br.com.aluno;
 import java.util.Scanner;
-import java.util.function.Function;
 
 public class Banco
 {
@@ -13,7 +12,7 @@ public class Banco
     private String tipoConta = "Corrente";
     private String nomeUsuario = "Usuario";
 
-    // Método principal que ira executar o código
+    // Método principal que irá executar o código
     public static void main ( String [] args )
     {
         Banco meuBanco = new Banco();
@@ -26,7 +25,7 @@ public class Banco
         System.out.println( "Obrigado pela preferência!" );
     }
 
-    // Método construtor do objeto banco
+    // Método construtor do objeto Banco
     public Banco ()
     {
         System.out.println( "Bem-vindo(a) ao banco " + nomeBanco + "!");
