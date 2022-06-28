@@ -11,7 +11,7 @@ public class Banco
     // Atributos do objeto
     private String tipoConta = "Corrente";
     private String nomeUsuario = "Usuario";
-
+    
     // Método principal que irá executar o código
     public static void main ( String [] args )
     {
